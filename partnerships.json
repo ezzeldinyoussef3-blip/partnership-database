@@ -1,20 +1,26 @@
 [
-    {
-        "partner": "Kaplan",
-        "country": "UK",
-        "programs": "Foundation, International Year One, Pre-Master",
-        "status": "Active"
-    },
-    {
-        "partner": "Study Group",
-        "country": "UK, USA, Australia",
-        "programs": "Foundation, International Year One, Pre-Master",
-        "status": "Active"
-    },
-    {
-        "partner": "LCI",
-        "country": "Canada",
-        "programs": "Diploma, Bachelor, Master",
-        "status": "Active"
-    }
+  {
+    "partnership": "Kaplan",
+    "country": "UK",
+    "specialization": "To be added",
+    "university": "To be added",
+    "program": "To be added",
+    "price": "To be added",
+    "scholarship_support": "To be confirmed",
+    "language_requirements": "To be added",
+    "gpa_requirement": "To be added",
+    "notes": ""
+  },
+  {
+    "partnership": "Kaplan",
+    "country": "USA",
+    "specialization": "To be added",
+    "university": "To be added",
+    "program": "To be added",
+    "price": "To be added",
+    "scholarship_support": "To be confirmed",
+    "language_requirements": "To be added",
+    "gpa_requirement": "To be added",
+    "notes": ""
+  }
 ]
