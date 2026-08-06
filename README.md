@@ -1,1 +1,1 @@
-# partnership-database
+Partnership search website
