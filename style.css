@@ -3,8 +3,8 @@
 }
 
 :root {
-    --primary: #073b6f;
-    --primary-dark: #052d54;
+    --primary: #f58220;
+    --primary-dark: #c95f00;
     --background: #f4f7fb;
     --card: #ffffff;
     --text: #172033;
@@ -86,7 +86,7 @@ h1 {
     box-shadow: 0 8px 25px rgba(23, 32, 51, 0.07);
 }
 
-label {
+label {ب
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
@@ -162,7 +162,7 @@ select:focus {
     align-items: flex-start;
     gap: 15px;
     padding: 20px;
-    background: linear-gradient(135deg, #073b6f, #0c5996);
+    background: linear-gradient(135deg, #f58220, #ff9f43);
     color: white;
 }
 
