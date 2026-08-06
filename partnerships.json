@@ -1,0 +1,20 @@
+[
+    {
+        "partner": "Kaplan",
+        "country": "UK",
+        "programs": "Foundation, International Year One, Pre-Master",
+        "status": "Active"
+    },
+    {
+        "partner": "Study Group",
+        "country": "UK, USA, Australia",
+        "programs": "Foundation, International Year One, Pre-Master",
+        "status": "Active"
+    },
+    {
+        "partner": "LCI",
+        "country": "Canada",
+        "programs": "Diploma, Bachelor, Master",
+        "status": "Active"
+    }
+]
