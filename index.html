@@ -6,24 +6,57 @@
     <title>Partnership Database</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>📋 Partnership Database</h1>
+    <div class="container">
 
-    <input type="text" id="search" placeholder="ابحث عن شريك...">
+        <h1>🎓 البحث عن التخصصات والشراكات</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Partner</th>
-                <th>Country</th>
-                <th>Programs</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody">
-        </tbody>
-    </table>
+        <div class="filters">
+
+            <select id="specializationFilter">
+                <option value="">اختر التخصص</option>
+            </select>
+
+            <select id="countryFilter">
+                <option value="">كل الدول</option>
+            </select>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="اكتب اسم تخصص أو شراكة..."
+            >
+
+        </div>
+
+        <p id="resultCount"></p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>التخصص</th>
+                        <th>الشراكة</th>
+                        <th>الدولة</th>
+                        <th>البرنامج</th>
+                        <th>السعر</th>
+                        <th>دعم الابتعاث</th>
+                        <th>متطلبات اللغة</th>
+                        <th>المعدل</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <p id="emptyMessage" class="empty-message">
+            لا توجد نتائج مطابقة.
+        </p>
+
+    </div>
 
     <script src="app.js"></script>
 
