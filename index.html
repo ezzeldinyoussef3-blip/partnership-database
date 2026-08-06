@@ -2,61 +2,111 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partnership Database</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>محرك البحث عن التخصصات</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <h1>🎓 البحث عن التخصصات والشراكات</h1>
+        <header class="page-header">
+            <div>
+                <p class="subtitle">دليل الشراكات التعليمية</p>
 
-        <div class="filters">
+                <h1>محرك البحث عن التخصصات</h1>
 
-            <select id="specializationFilter">
-                <option value="">اختر التخصص</option>
-            </select>
+                <p class="description">
+                    ابحث عن التخصص، ثم اعرف الشراكات والدول والمتطلبات المتاحة.
+                </p>
+            </div>
 
-            <select id="countryFilter">
-                <option value="">كل الدول</option>
-            </select>
+            <div class="results-box">
+                <span id="resultCount">0</span>
+                <small>نتيجة</small>
+            </div>
+        </header>
 
-            <input
-                type="text"
-                id="search"
-                placeholder="اكتب اسم تخصص أو شراكة..."
-            >
+        <section class="search-card">
 
-        </div>
+            <div class="main-search">
+                <label for="searchInput">ابحث عن التخصص</label>
 
-        <p id="resultCount"></p>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="مثال: Business أو Engineering أو Computer Science"
+                    autocomplete="off"
+                >
+            </div>
 
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>التخصص</th>
-                        <th>الشراكة</th>
-                        <th>الدولة</th>
-                        <th>البرنامج</th>
-                        <th>السعر</th>
-                        <th>دعم الابتعاث</th>
-                        <th>متطلبات اللغة</th>
-                        <th>المعدل</th>
-                    </tr>
-                </thead>
+            <div class="filters-grid">
 
-                <tbody id="tableBody"></tbody>
-            </table>
-        </div>
+                <div class="filter-group">
+                    <label for="specializationFilter">التخصص</label>
 
-        <p id="emptyMessage" class="empty-message">
-            لا توجد نتائج مطابقة.
-        </p>
+                    <select id="specializationFilter">
+                        <option value="">كل التخصصات</option>
+                    </select>
+                </div>
 
-    </div>
+                <div class="filter-group">
+                    <label for="countryFilter">الدولة</label>
+
+                    <select id="countryFilter">
+                        <option value="">كل الدول</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="partnershipFilter">الشراكة</label>
+
+                    <select id="partnershipFilter">
+                        <option value="">كل الشراكات</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="scholarshipFilter">دعم الابتعاث</label>
+
+                    <select id="scholarshipFilter">
+                        <option value="">الكل</option>
+                        <option value="Supported">مدعوم</option>
+                        <option value="Not Supported">غير مدعوم</option>
+                        <option value="To be confirmed">غير مؤكد</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button type="button" id="resetButton">
+                مسح البحث والفلاتر
+            </button>
+
+        </section>
+
+        <section id="cardsContainer" class="results-grid"></section>
+
+        <section id="emptyState" class="empty-state">
+            <h2>لا توجد نتائج مطابقة</h2>
+
+            <p>
+                جرّب كتابة اسم تخصص آخر أو إزالة بعض الفلاتر.
+            </p>
+        </section>
+
+        <section id="errorState" class="error-state">
+            حدث خطأ أثناء تحميل البيانات.
+        </section>
+
+    </main>
 
     <script src="app.js"></script>
 
