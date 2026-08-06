@@ -1,96 +1,104 @@
-const tableBody = document.getElementById("tableBody");
-const searchInput = document.getElementById("search");
-const specializationFilter = document.getElementById("specializationFilter");
+const searchInput = document.getElementById("searchInput");
+const specializationFilter = document.getElementById(
+    "specializationFilter"
+);
 const countryFilter = document.getElementById("countryFilter");
-const emptyMessage = document.getElementById("emptyMessage");
-const resultCount = document.getElementById("resultCount");
+const partnershipFilter = document.getElementById(
+    "partnershipFilter"
+);
+const scholarshipFilter = document.getElementById(
+    "scholarshipFilter"
+);
 
-let partnerships = [];
+const resetButton = document.getElementById("resetButton");
+const cardsContainer = document.getElementById("cardsContainer");
+const resultCount = document.getElementById("resultCount");
+const emptyState = document.getElementById("emptyState");
+const errorState = document.getElementById("errorState");
+
+let programs = [];
 
 fetch("partnerships.json")
-    .then(response => {
+    .then((response) => {
         if (!response.ok) {
-            throw new Error("تعذر تحميل البيانات");
+            throw new Error("Failed to load data");
         }
 
         return response.json();
     })
-    .then(data => {
-        partnerships = data;
+    .then((data) => {
+        programs = data;
 
-        createFilters();
-        displayResults(partnerships);
+        createFilterOptions();
+        filterPrograms();
     })
-    .catch(error => {
+    .catch((error) => {
         console.error(error);
 
-        tableBody.innerHTML = `
-            <tr>
-                <td colspan="8">حدث خطأ أثناء تحميل البيانات.</td>
-            </tr>
-        `;
+        cardsContainer.innerHTML = "";
+        emptyState.style.display = "none";
+        errorState.style.display = "block";
+        resultCount.textContent = "0";
     });
 
-function createFilters() {
-    const specializations = [
-        ...new Set(partnerships.map(item => item.specialization))
-    ].sort();
+function createFilterOptions() {
+    addOptions(
+        specializationFilter,
+        getUniqueValues("specialization")
+    );
 
-    const countries = [
-        ...new Set(partnerships.map(item => item.country))
-    ].sort();
+    addOptions(
+        countryFilter,
+        getUniqueValues("country")
+    );
 
-    specializations.forEach(specialization => {
+    addOptions(
+        partnershipFilter,
+        getUniqueValues("partnership")
+    );
+}
+
+function getUniqueValues(propertyName) {
+    return [
+        ...new Set(
+            programs
+                .map((item) => item[propertyName])
+                .filter(Boolean)
+        )
+    ].sort((a, b) => a.localeCompare(b));
+}
+
+function addOptions(selectElement, values) {
+    values.forEach((value) => {
         const option = document.createElement("option");
-        option.value = specialization;
-        option.textContent = specialization;
-        specializationFilter.appendChild(option);
-    });
 
-    countries.forEach(country => {
-        const option = document.createElement("option");
-        option.value = country;
-        option.textContent = country;
-        countryFilter.appendChild(option);
+        option.value = value;
+        option.textContent = value;
+
+        selectElement.appendChild(option);
     });
 }
 
-function displayResults(data) {
-    tableBody.innerHTML = "";
-
-    resultCount.textContent = `عدد النتائج: ${data.length}`;
-
-    if (data.length === 0) {
-        emptyMessage.style.display = "block";
-        return;
-    }
-
-    emptyMessage.style.display = "none";
-
-    data.forEach(item => {
-        const row = document.createElement("tr");
-
-        row.innerHTML = `
-            <td>${item.specialization}</td>
-            <td>${item.partnership}</td>
-            <td>${item.country}</td>
-            <td>${item.program}</td>
-            <td>${item.price}</td>
-            <td>${item.scholarshipSupport}</td>
-            <td>${item.languageRequirements}</td>
-            <td>${item.gpaRequirement}</td>
-        `;
-
-        tableBody.appendChild(row);
-    });
-}
-
-function filterResults() {
-    const searchValue = searchInput.value.toLowerCase().trim();
+function filterPrograms() {
+    const searchValue = normalizeText(searchInput.value);
     const selectedSpecialization = specializationFilter.value;
     const selectedCountry = countryFilter.value;
+    const selectedPartnership = partnershipFilter.value;
+    const selectedScholarship = scholarshipFilter.value;
 
-    const filteredData = partnerships.filter(item => {
+    const filteredPrograms = programs.filter((item) => {
+        const searchableContent = normalizeText(`
+            ${item.specialization || ""}
+            ${item.partnership || ""}
+            ${item.country || ""}
+            ${item.university || ""}
+            ${item.program || ""}
+        `);
+
+        const matchesSearch =
+            searchValue === "" ||
+            searchableContent.includes(searchValue);
+
         const matchesSpecialization =
             selectedSpecialization === "" ||
             item.specialization === selectedSpecialization;
@@ -99,22 +107,181 @@ function filterResults() {
             selectedCountry === "" ||
             item.country === selectedCountry;
 
-        const searchableText = `
-            ${item.specialization}
-            ${item.partnership}
-            ${item.country}
-            ${item.program}
-        `.toLowerCase();
+        const matchesPartnership =
+            selectedPartnership === "" ||
+            item.partnership === selectedPartnership;
 
-        const matchesSearch =
-            searchableText.includes(searchValue);
+        const matchesScholarship =
+            selectedScholarship === "" ||
+            item.scholarshipSupport === selectedScholarship;
 
-        return matchesSpecialization && matchesCountry && matchesSearch;
+        return (
+            matchesSearch &&
+            matchesSpecialization &&
+            matchesCountry &&
+            matchesPartnership &&
+            matchesScholarship
+        );
     });
 
-    displayResults(filteredData);
+    displayPrograms(filteredPrograms);
 }
 
-searchInput.addEventListener("input", filterResults);
-specializationFilter.addEventListener("change", filterResults);
-countryFilter.addEventListener("change", filterResults);
+function displayPrograms(data) {
+    cardsContainer.innerHTML = "";
+    resultCount.textContent = data.length;
+
+    if (data.length === 0) {
+        emptyState.style.display = "block";
+        return;
+    }
+
+    emptyState.style.display = "none";
+    errorState.style.display = "none";
+
+    data.forEach((item) => {
+        const card = document.createElement("article");
+
+        card.className = "result-card";
+
+        card.innerHTML = `
+            <div class="card-header">
+                <div>
+                    <h2>${escapeHTML(item.specialization)}</h2>
+                    <p>${escapeHTML(item.partnership)}</p>
+                </div>
+
+                <span class="country-badge">
+                    ${escapeHTML(item.country)}
+                </span>
+            </div>
+
+            <div class="card-body">
+                <div class="data-grid">
+
+                    <div class="data-item">
+                        <span>الجامعة</span>
+                        <strong>
+                            ${escapeHTML(item.university)}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>البرنامج</span>
+                        <strong>
+                            ${escapeHTML(item.program)}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>الرسوم الدراسية</span>
+                        <strong>
+                            ${escapeHTML(item.price)}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>دعم الابتعاث</span>
+
+                        <strong class="scholarship-badge
+                            ${getScholarshipClass(
+                                item.scholarshipSupport
+                            )}">
+                            ${getScholarshipLabel(
+                                item.scholarshipSupport
+                            )}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>متطلبات اللغة</span>
+                        <strong>
+                            ${escapeHTML(
+                                item.languageRequirements
+                            )}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>المعدل المطلوب</span>
+                        <strong>
+                            ${escapeHTML(item.gpaRequirement)}
+                        </strong>
+                    </div>
+
+                    <div class="data-item">
+                        <span>موعد الدراسة</span>
+                        <strong>
+                            ${escapeHTML(item.intake)}
+                        </strong>
+                    </div>
+
+                    <div class="data-item full-width">
+                        <span>ملاحظات</span>
+                        <strong>
+                            ${escapeHTML(item.notes)}
+                        </strong>
+                    </div>
+
+                </div>
+            </div>
+        `;
+
+        cardsContainer.appendChild(card);
+    });
+}
+
+function getScholarshipClass(status) {
+    if (status === "Supported") {
+        return "supported";
+    }
+
+    if (status === "Not Supported") {
+        return "not-supported";
+    }
+
+    return "to-be-confirmed";
+}
+
+function getScholarshipLabel(status) {
+    if (status === "Supported") {
+        return "مدعوم";
+    }
+
+    if (status === "Not Supported") {
+        return "غير مدعوم";
+    }
+
+    return "غير مؤكد";
+}
+
+function normalizeText(value) {
+    return String(value || "")
+        .toLowerCase()
+        .trim();
+}
+
+function escapeHTML(value) {
+    const div = document.createElement("div");
+
+    div.textContent = value || "سيتم إضافته";
+    return div.innerHTML;
+}
+
+function resetFilters() {
+    searchInput.value = "";
+    specializationFilter.value = "";
+    countryFilter.value = "";
+    partnershipFilter.value = "";
+    scholarshipFilter.value = "";
+
+    filterPrograms();
+    searchInput.focus();
+}
+
+searchInput.addEventListener("input", filterPrograms);
+specializationFilter.addEventListener("change", filterPrograms);
+countryFilter.addEventListener("change", filterPrograms);
+partnershipFilter.addEventListener("change", filterPrograms);
+scholarshipFilter.addEventListener("change", filterPrograms);
+resetButton.addEventListener("click", resetFilters);
