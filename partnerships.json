@@ -1,26 +1,72 @@
 [
-  {
-    "partnership": "Kaplan",
-    "country": "UK",
-    "specialization": "To be added",
-    "university": "To be added",
-    "program": "To be added",
-    "price": "To be added",
-    "scholarship_support": "To be confirmed",
-    "language_requirements": "To be added",
-    "gpa_requirement": "To be added",
-    "notes": ""
-  },
-  {
-    "partnership": "Kaplan",
-    "country": "USA",
-    "specialization": "To be added",
-    "university": "To be added",
-    "program": "To be added",
-    "price": "To be added",
-    "scholarship_support": "To be confirmed",
-    "language_requirements": "To be added",
-    "gpa_requirement": "To be added",
-    "notes": ""
-  }
+    {
+        "specialization": "Business",
+        "partnership": "Kaplan",
+        "country": "UK",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Business",
+        "partnership": "Kaplan",
+        "country": "USA",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Computer Science",
+        "partnership": "Study Group",
+        "country": "UK",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Computer Science",
+        "partnership": "Study Group",
+        "country": "USA",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Design",
+        "partnership": "LCI",
+        "country": "Australia",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Engineering",
+        "partnership": "CEG",
+        "country": "UK",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    },
+    {
+        "specialization": "Engineering",
+        "partnership": "Shorelight",
+        "country": "USA",
+        "program": "To be added",
+        "price": "To be added",
+        "scholarshipSupport": "To be confirmed",
+        "languageRequirements": "To be added",
+        "gpaRequirement": "To be added"
+    }
 ]
