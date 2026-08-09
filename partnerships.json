@@ -120,6 +120,41 @@
         "specialization": "Business with Marketing",
         "name": "BSc (Hons) Business with Marketing with placement",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Banking and International Finance",
+        "name": "BSc (Hons) Banking and International Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Banking and International Finance",
+        "name": "BSc (Hons) Banking and International Finance with placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical and Healthcare Engineering",
+        "name": "BEng (Hons) Biomedical and Healthcare Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical and Healthcare Engineering",
+        "name": "MEng (Hons) Biomedical and Healthcare Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Analytics",
+        "name": "BSc (Hons) Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Analytics with Finance",
+        "name": "BSc (Hons) Business Analytics with Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -242,6 +277,56 @@
         "specialization": "Business with Law",
         "name": "BSc (Hons) Business with Law",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "BSc (Hons) Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "BSc (Hons) Biology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Engineering",
+        "name": "BEng (Hons) Biomedical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Engineering",
+        "name": "BEng (Hons) Biomedical Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Engineering",
+        "name": "BEng (Hons) Biomedical Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "BSc (Hons) Biomedical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "BSc (Hons) Biomedical Sciences with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -309,6 +394,101 @@
       {
         "specialization": "Business Management",
         "name": "BSc (Hons) Business Management with Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "MSci (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "MSci (Hons) Biochemistry with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry with Study in Continental Europe",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry with an International Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "BSc (Hons) Biological Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "MSci (Hons) Biological Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "MSci (Hons) Biological Sciences with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "BSc (Hons) Biological Sciences with Study in Continental Europe",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "BSc (Hons) Biological Sciences with an International Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Science",
+        "name": "BSc (Hons) Biomedical Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Science",
+        "name": "MSci (Hons) Biomedical Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Business Analytics and Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Communications",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Communications and Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Human Resource Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Human Resource Management and Year in Industry",
         "program": "Undergraduate"
       }
     ]
@@ -425,6 +605,56 @@
       {
         "specialization": "Business and Management",
         "name": "BSc (Hons) Business and Management with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "MSci (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry with Medical Biochemistry",
+        "name": "BSc (Hons) Biochemistry with Medical Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry with Medical Biochemistry",
+        "name": "MSci (Hons) Biochemistry with Medical Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry with Molecular Biology and Biotechnology",
+        "name": "BSc (Hons) Biochemistry with Molecular Biology and Biotechnology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry with Molecular Biology and Biotechnology",
+        "name": "MSci (Hons) Biochemistry with Molecular Biology and Biotechnology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "BSc (Hons) Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "MSci (Hons) Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "BSc (Hons) Biomedical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Analytics",
+        "name": "BSc (Hons) Business Analytics",
         "program": "Undergraduate"
       }
     ]
@@ -551,6 +781,51 @@
         "specialization": "Architecture and Environmental Design",
         "name": "BSc (Hons) Architecture and Environmental Design",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biological Sciences",
+        "name": "BSc (Hons) Biological Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "BSc (Hons) Biomedical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Computing",
+        "name": "BSc (Hons) Business Computing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BA (Hons) Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BA (Hons) Business Management (Digital Business)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BA (Hons) Business Management (Entrepreneurship)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BA (Hons) Business Management (Human Resource Management)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BA (Hons) Business Management (Marketing)",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -613,6 +888,51 @@
       {
         "specialization": "Business and Society",
         "name": "BA (Hons) Business and Society (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Bioarchaeology",
+        "name": "BSc (Hons) Bioarchaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "BSc (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biochemistry",
+        "name": "MBiochem (Hons) Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "BSc (Hons) Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biology",
+        "name": "MBiol (Hons) Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "BSc (Hons) Biomedical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biomedical Sciences",
+        "name": "MBiomedSci (Hons) Biomedical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biotechnology",
+        "name": "BSc (Hons) Biotechnology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Biotechnology",
+        "name": "MBiol (Hons) Biotechnology",
         "program": "Undergraduate"
       }
     ]
