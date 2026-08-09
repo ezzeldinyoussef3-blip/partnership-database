@@ -15,75 +15,9 @@
 
 <body>
 
-    <!-- =========================
-         شاشة تسجيل الدخول
-    ========================== -->
-    <section id="loginScreen" class="login-screen">
-
-        <div class="login-box">
-
-            <div class="login-logo">
-                D
-            </div>
-
-            <p class="login-subtitle">
-                Direct Educational Services
-            </p>
-
-            <h1>
-                بوابة الشراكات التعليمية
-            </h1>
-
-            <p class="login-description">
-                هذه الصفحة مخصصة لموظفي دايركت
-            </p>
-
-            <form id="loginForm">
-
-                <div class="login-field">
-
-                    <label for="passwordInput">
-                        كلمة المرور
-                    </label>
-
-                    <input
-                        type="password"
-                        id="passwordInput"
-                        placeholder="أدخل كلمة المرور"
-                        autocomplete="current-password"
-                        required
-                    >
-
-                </div>
-
-                <p
-                    id="loginError"
-                    class="login-error"
-                >
-                    كلمة المرور غير صحيحة
-                </p>
-
-                <button
-                    type="submit"
-                    class="login-button"
-                >
-                    دخول
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         الموقع الرئيسي
-    ========================== -->
     <main
         id="mainWebsite"
         class="container"
-        style="display: none;"
     >
 
         <header class="page-header">
@@ -102,14 +36,6 @@
                     ابحث عن التخصص، ثم اعرف الشراكات والدول والمتطلبات المتاحة.
                 </p>
 
-                <button
-                    type="button"
-                    id="logoutButton"
-                    class="logout-button"
-                >
-                    تسجيل الخروج
-                </button>
-
             </div>
 
             <div class="results-box">
@@ -118,7 +44,6 @@
             </div>
 
         </header>
-
 
         <section class="search-card">
 
@@ -137,7 +62,6 @@
 
             </div>
 
-
             <div class="filters-grid">
 
                 <div class="filter-group">
@@ -153,7 +77,6 @@
                     </select>
 
                 </div>
-
 
                 <div class="filter-group">
 
@@ -179,7 +102,6 @@
 
                 </div>
 
-
                 <div class="filter-group">
 
                     <label for="countryFilter">
@@ -196,7 +118,6 @@
 
                 </div>
 
-
                 <div class="filter-group">
 
                     <label for="partnershipFilter">
@@ -212,7 +133,6 @@
                     </select>
 
                 </div>
-
 
                 <div class="filter-group">
 
@@ -244,7 +164,6 @@
 
             </div>
 
-
             <button
                 type="button"
                 id="resetButton"
@@ -254,12 +173,10 @@
 
         </section>
 
-
         <section
             id="cardsContainer"
             class="results-grid"
         ></section>
-
 
         <section
             id="emptyState"
@@ -276,7 +193,6 @@
 
         </section>
 
-
         <section
             id="errorState"
             class="error-state"
@@ -285,7 +201,6 @@
         </section>
 
     </main>
-
 
     <script src="app.js"></script>
 
