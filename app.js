@@ -15,6 +15,9 @@ const countryFilter = document.getElementById(
 const partnershipFilter = document.getElementById(
     "partnershipFilter"
 );
+const universityFilter = document.getElementById(
+    "universityFilter"
+);
 
 const scholarshipFilter = document.getElementById(
     "scholarshipFilter"
@@ -431,6 +434,9 @@ function createFilterOptions() {
         partnershipFilter
     );
 
+    clearGeneratedOptions(
+    universityFilter
+);
 
     addOptions(
 
@@ -463,7 +469,16 @@ function createFilterOptions() {
         )
 
     );
+    
+addOptions(
 
+    universityFilter,
+
+    getUniqueValues(
+        "university"
+    )
+
+);
 }
 
 
@@ -600,6 +615,9 @@ function filterPrograms() {
 
     const selectedPartnership =
         partnershipFilter.value;
+    
+    const selectedScholarship =
+    scholarshipFilter.value;
 
 
     const selectedScholarship =
@@ -672,6 +690,13 @@ function filterPrograms() {
 
                     item.partnership ===
                         selectedPartnership;
+                
+                const matchesUniversity =
+
+    selectedUniversity === "" ||
+
+    item.university ===
+        selectedUniversity;
 
 
                 const matchesScholarship =
@@ -693,6 +718,9 @@ function filterPrograms() {
                     matchesCountry &&
 
                     matchesPartnership &&
+                    
+                    matchesUniversity &&
+
 
                     matchesScholarship
 
@@ -1153,6 +1181,9 @@ function resetFilters() {
     scholarshipFilter.value =
         "";
 
+    universityFilter.value =
+    "";
+
 
     filterPrograms();
 
@@ -1191,6 +1222,11 @@ countryFilter.addEventListener(
 
 
 partnershipFilter.addEventListener(
+    "change",
+    filterPrograms
+);
+
+universityFilter.addEventListener(
     "change",
     filterPrograms
 );
