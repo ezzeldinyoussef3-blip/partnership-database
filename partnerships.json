@@ -1,16 +1,21 @@
 [
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "ASU London",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Partner University",
+    "degrees": [
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "specialization": "All Specializations",
@@ -69,6 +74,51 @@
       {
         "specialization": "Artificial Intelligence",
         "name": "BSc (Hons) Artificial Intelligence",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Social Purpose",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Social Purpose with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management, Digital Innovation and Entrepreneurship",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management, Digital Innovation and Entrepreneurship with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business with Finance",
+        "name": "BSc (Hons) Business with Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business with Finance",
+        "name": "BSc (Hons) Business with Finance with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business with Marketing",
+        "name": "BSc (Hons) Business with Marketing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business with Marketing",
+        "name": "BSc (Hons) Business with Marketing with placement",
         "program": "Undergraduate"
       }
     ]
@@ -182,6 +232,16 @@
         "specialization": "Applied Artificial Intelligence",
         "name": "BSc (Hons) Applied Artificial Intelligence",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business with Law",
+        "name": "BSc (Hons) Business with Law",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -229,6 +289,26 @@
       {
         "specialization": "Artificial Intelligence and Computer Science",
         "name": "BSc (Hons) Artificial Intelligence (AI) and Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Marketing and Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Operations and Supply Chain Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Operations and Supply Chain Management with Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business Management",
+        "name": "BSc (Hons) Business Management with Year in Industry",
         "program": "Undergraduate"
       }
     ]
@@ -326,6 +406,26 @@
         "specialization": "Artificial Intelligence",
         "name": "MSc (Hons) Artificial Intelligence",
         "program": "Postgraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management with Innovation",
+        "name": "MSc (Hons) Business and Management with Innovation",
+        "program": "Postgraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -369,17 +469,22 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of Nottingham",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Partner University",
+    "degrees": [
+      {
+        "specialization": "Business and Management",
+        "name": "Business and Management BSc (Hons)",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "partnership": "Kaplan",
@@ -478,6 +583,36 @@
       {
         "specialization": "Archaeology",
         "name": "BA (Hons) Archaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BA (Hons) Business and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BSc (Hons) Business and Management (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Management",
+        "name": "BA (Hons) Business and Management (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Society",
+        "name": "BA (Hons) Business and Society",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Business and Society",
+        "name": "BA (Hons) Business and Society (with a year in industry)",
         "program": "Undergraduate"
       }
     ]
