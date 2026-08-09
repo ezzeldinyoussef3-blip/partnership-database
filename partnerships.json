@@ -26,17 +26,52 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "City St George's, University of London",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance with placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Actuarial Science",
+        "name": "BSc (Hons) Actuarial Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Actuarial Science",
+        "name": "BSc (Hons) Actuarial Science with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Artificial Intelligence",
+        "name": "BSc (Hons) Artificial Intelligence",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "specialization": "All Specializations",
@@ -65,30 +100,138 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
+    "partnership": "Kaplan",
+    "country": "UK",
+    "university": "NTU London",
+    "price": "سيتم إضافة السعر",
+    "scholarshipSupport": "To be confirmed",
+    "languageRequirements": "سيتم إضافة متطلبات اللغة",
+    "gpaRequirement": "سيتم إضافة المعدل",
+    "intake": "سيتم إضافته",
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Animation",
+        "name": "BA (Hons) Animation",
+        "program": "Undergraduate"
+      }
+    ]
+  },
+  {
     "partnership": "Kaplan",
     "country": "UK",
     "university": "Queen Mary University of London",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Actuarial Science",
+        "name": "BSc (Hons) Actuarial Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Actuarial Science",
+        "name": "BSc (Hons) Actuarial Science with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Actuarial Science",
+        "name": "BSc (Hons) Actuarial Science with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Applied Artificial Intelligence",
+        "name": "BSc (Hons) Applied Artificial Intelligence",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of Birmingham",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance with Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ancient History and Archaeology",
+        "name": "BA (Hons) Ancient History and Archaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ancient and Medieval History",
+        "name": "BA (Hons) Ancient and Medieval History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Artificial Intelligence and Computer Science",
+        "name": "BSc (Hons) Artificial Intelligence (AI) and Computer Science",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "specialization": "All Specializations",
@@ -104,17 +247,87 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of Bristol",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Management",
+        "name": "BSc (Hons) Accounting and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Management",
+        "name": "BSc (Hons) Accounting and Management with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "BEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Aerospace Engineering",
+        "name": "MEng (Hons) Aerospace Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ancient History",
+        "name": "BA (Hons) Ancient History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Anthropology",
+        "name": "BA (Hons) Anthropology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Anthropology",
+        "name": "MArts (Hons) Anthropology with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Applied Anatomy",
+        "name": "BSc (Hons) Applied Anatomy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Applied Anatomy",
+        "name": "MSc (Hons) Applied Anatomy",
+        "program": "Postgraduate"
+      },
+      {
+        "specialization": "Archaeology and Anthropology",
+        "name": "BA (Hons) Archaeology and Anthropology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Artificial Intelligence",
+        "name": "BSc (Hons) Artificial Intelligence",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Artificial Intelligence",
+        "name": "MSc (Hons) Artificial Intelligence",
+        "program": "Postgraduate"
+      }
+    ]
   },
   {
     "specialization": "All Specializations",
@@ -169,30 +382,105 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of Westminster",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting and Business Management",
+        "name": "BSc (Hons) Accounting and Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting and Finance",
+        "name": "BSc (Hons) Accounting and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Animation",
+        "name": "BA (Hons) Animation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Arabic and English",
+        "name": "BA (Hons) Arabic and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Arabic and International Business",
+        "name": "BA (Hons) Arabic and International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Arabic and International Communication",
+        "name": "BA (Hons) Arabic and International Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Arabic and International Relations",
+        "name": "BA (Hons) Arabic and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Arabic and Linguistics",
+        "name": "BA (Hons) Arabic and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Architectural Technology",
+        "name": "BSc (Hons) Architectural Technology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Architecture",
+        "name": "BA (Hons) Architecture",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Architecture and Environmental Design",
+        "name": "BSc (Hons) Architecture and Environmental Design",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of York",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Degree Finder",
+    "degrees": [
+      {
+        "specialization": "Accounting, Business Finance and Management",
+        "name": "BSc (Hons) Accounting, Business Finance and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Accounting, Business Finance and Management",
+        "name": "BSc (Hons) Accounting, Business Finance and Management (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Archaeology",
+        "name": "BSc (Hons) Archaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Archaeology",
+        "name": "BA (Hons) Archaeology",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "specialization": "All Specializations",
@@ -207,7 +495,6 @@
     "intake": "سيتم إضافته",
     "notes": "Kaplan Partner University"
   },
-
   {
     "specialization": "All Specializations",
     "partnership": "Kaplan",
@@ -273,7 +560,6 @@
     "intake": "سيتم إضافته",
     "notes": "Kaplan Partner University"
   },
-
   {
     "specialization": "All Specializations",
     "partnership": "Kaplan",
@@ -300,7 +586,6 @@
     "intake": "سيتم إضافته",
     "notes": "Kaplan Partner University"
   },
-
   {
     "specialization": "All Specializations",
     "partnership": "Kaplan",
@@ -340,7 +625,6 @@
     "intake": "سيتم إضافته",
     "notes": "Kaplan Partner University"
   },
-
   {
     "specialization": "All Specializations",
     "partnership": "Kaplan",
@@ -354,7 +638,6 @@
     "intake": "سيتم إضافته",
     "notes": "Kaplan Partner University"
   },
-
   {
     "specialization": "Engineering",
     "partnership": "CEG - ONCAMPUS",
