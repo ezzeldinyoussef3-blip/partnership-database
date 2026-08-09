@@ -18,7 +18,7 @@ const errorState = document.getElementById("errorState");
 
 let programs = [];
 
-fetch("partnerships.json")
+fetch("./partnerships.json")
     .then((response) => {
         if (!response.ok) {
             throw new Error("Failed to load data");
