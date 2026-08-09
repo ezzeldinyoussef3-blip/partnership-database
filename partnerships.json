@@ -14,6 +14,11 @@
         "specialization": "Business and Management",
         "name": "BSc (Hons) Business and Management",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -154,6 +159,61 @@
       {
         "specialization": "Business Management",
         "name": "BSc (Hons) Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil and Infrastructure Engineering",
+        "name": "BEng (Hons) Civil and Infrastructure Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil and Infrastructure Engineering",
+        "name": "MEng (Hons) Civil and Infrastructure Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Communication, PR and Advertising",
+        "name": "BA (Hons) Communication, PR and Advertising",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "MSci (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Cyber Security",
+        "name": "MSci (Hons) Computer Science with Cyber Security",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Games Technology",
+        "name": "BSc (Hons) Computer Science with Games Technology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Games Technology",
+        "name": "MSci (Hons) Computer Science with Games Technology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BSc (Hons) Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology and Law",
+        "name": "BSc (Hons) Criminology and Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology and Sociology",
+        "name": "BSc (Hons) Criminology and Sociology",
         "program": "Undergraduate"
       }
     ]
@@ -327,6 +387,81 @@
         "specialization": "Business Management",
         "name": "BSc (Hons) Business Management",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "BEng (Hons) Chemical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "BEng (Hons) Chemical Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "BEng (Hons) Chemical Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "BSc (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "BSc (Hons) Chemistry with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Comparative Literature",
+        "name": "BA (Hons) Comparative Literature",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science and Artificial Intelligence",
+        "name": "BSc (Hons) Computer Science and Artificial Intelligence",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science and Artificial Intelligence",
+        "name": "BSc (Hons) Computer Science and Artificial Intelligence with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science and Artificial Intelligence",
+        "name": "BSc (Hons) Computer Science and Artificial Intelligence with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Industrial Experience",
+        "name": "BSc (Hons) Computer Science with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Year Abroad",
+        "name": "BSc (Hons) Computer Science with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Systems Engineering",
+        "name": "BEng (Hons) Computer Systems Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Systems Engineering",
+        "name": "BEng (Hons) Computer Systems Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Systems Engineering",
+        "name": "BEng (Hons) Computer Systems Engineering with Year Abroad",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -489,6 +624,171 @@
       {
         "specialization": "Business Management",
         "name": "BSc (Hons) Business Management with Human Resource Management and Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "BEng (Hons) Chemical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "MEng (Hons) Chemical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "MEng (Hons) Chemical Engineering (International Study)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "MEng (Hons) Chemical Engineering with Industrial Study",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemical Engineering",
+        "name": "BEng (Hons) Chemical Engineering with Industrial Study",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "BSc (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MSci (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Business Management",
+        "name": "BSc (Hons) Chemistry with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Business Management",
+        "name": "MSci (Hons) Chemistry with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Medicinal Chemistry and Drug Discovery",
+        "name": "BSc (Hons) Chemistry with Medicinal Chemistry and Drug Discovery",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Medicinal Chemistry and Drug Discovery",
+        "name": "MSci (Hons) Chemistry with Medicinal Chemistry and Drug Discovery",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MSci (Hons) Chemistry with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Sustainability",
+        "name": "BSc (Hons) Chemistry with Sustainability",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Sustainability",
+        "name": "MSci (Hons) Chemistry with Sustainability",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with a Modern Language",
+        "name": "MSci (Hons) Chemistry with a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with a Year in Industry",
+        "name": "MSci (Hons) Chemistry with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with a Year in Industry",
+        "name": "BSc (Hons) Chemistry with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "BEng (Hons) Civil Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "MEng (Hons) Civil Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "MEng (Hons) Civil Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "MEng (Hons) Civil Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "MEng (Hons) Civil Engineering with International Study",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Classical Literature and Civilisation",
+        "name": "BA (Hons) Classical Literature and Civilisation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Engineering",
+        "name": "BSc (Hons) Computer Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "MSci (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Study Abroad",
+        "name": "MEng (Hons) Computer Science with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with a Year in Industry",
+        "name": "BSc (Hons) Computer Science with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with a Year in Industry",
+        "name": "MEng (Hons) Computer Science with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science/Software Engineering",
+        "name": "MEng (Hons) Computer Science/Software Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science/Software Engineering",
+        "name": "MEng (Hons) Computer Science/Software Engineering with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BA (Hons) Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BA (Hons) Criminology with Year Abroad",
         "program": "Undergraduate"
       }
     ]
@@ -655,6 +955,126 @@
       {
         "specialization": "Business Analytics",
         "name": "BSc (Hons) Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Cancer Biology and Immunology",
+        "name": "BSc (Hons) Cancer Biology and Immunology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Cancer Biology and Immunology",
+        "name": "MSci (Hons) Cancer Biology and Immunology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Cellular and Molecular Medicine",
+        "name": "BSc (Hons) Cellular and Molecular Medicine",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Cellular and Molecular Medicine",
+        "name": "MSci (Hons) Cellular and Molecular Medicine",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "BSc (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MSci (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Computing",
+        "name": "BSc (Hons) Chemistry with Computing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry with Computing",
+        "name": "MSci (Hons) Chemistry with Computing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MChem (Hons) Chemistry with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MSci (Hons) Chemistry with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MSci (Hons) Chemistry with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Childhood Studies",
+        "name": "BSc (Hons) Childhood Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Childhood Studies",
+        "name": "BSc (Hons) Childhood Studies with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "BEng (Hons) Civil Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Civil Engineering",
+        "name": "MEng (Hons) Civil Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Classical Studies",
+        "name": "BA (Hons) Classical Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Classics",
+        "name": "BA (Hons) Classics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Cognitive and Clinical Neuroscience",
+        "name": "BSc (Hons) Cognitive and Clinical Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Comparative Literature and Culture",
+        "name": "BA (Hons) Comparative Literature and Culture",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Comparative Literature and Cultures and Modern Languages",
+        "name": "BA (Hons) Comparative Literature and Cultures and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Innovation",
+        "name": "MEng (Hons) Computer Science with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BSc (Hons) Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BSc (Hons) Criminology with Study Abroad",
         "program": "Undergraduate"
       }
     ]
@@ -826,6 +1246,66 @@
         "specialization": "Business Management",
         "name": "BA (Hons) Business Management (Marketing)",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chinese and English",
+        "name": "BA (Hons) Chinese and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chinese and International Business",
+        "name": "BA (Hons) Chinese and International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chinese and International Communication",
+        "name": "BA (Hons) Chinese and International Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chinese and International Relations",
+        "name": "BA (Hons) Chinese and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chinese and Linguistics",
+        "name": "BA (Hons) Chinese and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Games Development",
+        "name": "BSc (Hons) Computer Games Development",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Construction Management",
+        "name": "BSc (Hons) Construction Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Creative Media Arts",
+        "name": "BA (Hons) Creative Media Arts",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Creative Writing and English",
+        "name": "BA (Hons) Creative Writing and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Creative and Professional Writing",
+        "name": "BA (Hons) Creative and Professional Writing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BA (Hons) Criminology",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -933,6 +1413,151 @@
       {
         "specialization": "Biotechnology",
         "name": "MBiol (Hons) Biotechnology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "BSc (Hons) Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MChem (Hons) Chemistry (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MChem (Hons) Chemistry (with a year in York)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry",
+        "name": "MChem (Hons) Chemistry (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Biological and Medicinal Chemistry",
+        "name": "MChem (Hons) Chemistry, Biological and Medicinal Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Biological and Medicinal Chemistry",
+        "name": "MChem (Hons) Chemistry, Biological and Medicinal Chemistry (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Biological and Medicinal Chemistry",
+        "name": "MChem (Hons) Chemistry, Biological and Medicinal Chemistry (with a year in York)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Biological and Medicinal Chemistry",
+        "name": "MChem (Hons) Chemistry, Biological and Medicinal Chemistry (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Green Principles and Sustainable Processes",
+        "name": "BSc (Hons) Chemistry, Green Principles and Sustainable Processes",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Green Principles and Sustainable Processes",
+        "name": "MChem (Hons) Chemistry, Green Principles and Sustainable Processes (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Green Principles and Sustainable Processes",
+        "name": "MChem (Hons) Chemistry, Green Principles and Sustainable Processes (with a year in York)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, Green Principles and Sustainable Processes",
+        "name": "MChem (Hons) Chemistry, Green Principles and Sustainable Processes (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, the Atmosphere and the Environment",
+        "name": "BSc (Hons) Chemistry, the Atmosphere and the Environment",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, the Atmosphere and the Environment",
+        "name": "MChem (Hons) Chemistry, the Atmosphere and the Environment (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, the Atmosphere and the Environment",
+        "name": "MChem (Hons) Chemistry, the Atmosphere and the Environment (with a year in York)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Chemistry, the Atmosphere and the Environment",
+        "name": "MChem (Hons) Chemistry, the Atmosphere and the Environment (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BEng (Hons) Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "BSc (Hons) Computer Science (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science",
+        "name": "MEng (Hons) Computer Science (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science and Mathematics",
+        "name": "BSc (Hons) Computer Science and Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science and Mathematics",
+        "name": "BSc (Hons) Computer Science and Mathematics (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Cyber Security",
+        "name": "MEng (Hons) Computer Science with Cyber Security",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Cyber Security",
+        "name": "BSc (Hons) Computer Science with Cyber Security",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Cyber Security",
+        "name": "MEng (Hons) Computer Science with Cyber Security (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Computer Science with Cyber Security",
+        "name": "BSc (Hons) Computer Science with Cyber Security (with a year in industry)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminal Justice and Social Policy",
+        "name": "BA (Hons) Criminal Justice and Social Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology",
+        "name": "BA (Hons) Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Criminology and Social Psychology",
+        "name": "BA (Hons) Criminology and Social Psychology",
         "program": "Undergraduate"
       }
     ]
