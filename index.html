@@ -15,29 +15,118 @@
 
 <body>
 
-    <main class="container">
+    <!-- =========================
+         شاشة تسجيل الدخول
+    ========================== -->
+    <section id="loginScreen" class="login-screen">
+
+        <div class="login-box">
+
+            <div class="login-logo">
+                D
+            </div>
+
+            <p class="login-subtitle">
+                Direct Educational Services
+            </p>
+
+            <h1>
+                بوابة الشراكات التعليمية
+            </h1>
+
+            <p class="login-description">
+                هذه الصفحة مخصصة لموظفي دايركت
+            </p>
+
+            <form id="loginForm">
+
+                <div class="login-field">
+
+                    <label for="passwordInput">
+                        كلمة المرور
+                    </label>
+
+                    <input
+                        type="password"
+                        id="passwordInput"
+                        placeholder="أدخل كلمة المرور"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+                <p
+                    id="loginError"
+                    class="login-error"
+                >
+                    كلمة المرور غير صحيحة
+                </p>
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    دخول
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         الموقع الرئيسي
+    ========================== -->
+    <main
+        id="mainWebsite"
+        class="container"
+        style="display: none;"
+    >
 
         <header class="page-header">
-            <div>
-                <p class="subtitle">دليل الشراكات التعليمية مع دايركت</p>
 
-                <h1>محرك البحث عن التخصصات</h1>
+            <div>
+
+                <p class="subtitle">
+                    دليل الشراكات التعليمية مع دايركت
+                </p>
+
+                <h1>
+                    محرك البحث عن التخصصات
+                </h1>
 
                 <p class="description">
                     ابحث عن التخصص، ثم اعرف الشراكات والدول والمتطلبات المتاحة.
                 </p>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="logout-button"
+                >
+                    تسجيل الخروج
+                </button>
+
             </div>
 
             <div class="results-box">
                 <span id="resultCount">0</span>
                 <small>نتيجة</small>
             </div>
+
         </header>
+
 
         <section class="search-card">
 
             <div class="main-search">
-                <label for="searchInput">ابحث عن التخصص</label>
+
+                <label for="searchInput">
+                    ابحث عن التخصص
+                </label>
 
                 <input
                     type="search"
@@ -45,78 +134,158 @@
                     placeholder="مثال: Business أو Engineering أو Computer Science"
                     autocomplete="off"
                 >
+
             </div>
+
 
             <div class="filters-grid">
 
                 <div class="filter-group">
-                    <label for="specializationFilter">التخصص</label>
+
+                    <label for="specializationFilter">
+                        التخصص
+                    </label>
 
                     <select id="specializationFilter">
-                        <option value="">كل التخصصات</option>
+                        <option value="">
+                            كل التخصصات
+                        </option>
                     </select>
+
                 </div>
 
+
                 <div class="filter-group">
-                    <label for="degreeLevelFilter">الدرجة الدراسية</label>
+
+                    <label for="degreeLevelFilter">
+                        الدرجة الدراسية
+                    </label>
 
                     <select id="degreeLevelFilter">
-                        <option value="">كل الدرجات</option>
-                        <option value="Bachelor">بكالوريوس</option>
-                        <option value="Master">ماجستير</option>
+
+                        <option value="">
+                            كل الدرجات
+                        </option>
+
+                        <option value="Bachelor">
+                            بكالوريوس
+                        </option>
+
+                        <option value="Master">
+                            ماجستير
+                        </option>
+
                     </select>
+
                 </div>
 
+
                 <div class="filter-group">
-                    <label for="countryFilter">الدولة</label>
+
+                    <label for="countryFilter">
+                        الدولة
+                    </label>
 
                     <select id="countryFilter">
-                        <option value="">كل الدول</option>
+
+                        <option value="">
+                            كل الدول
+                        </option>
+
                     </select>
+
                 </div>
 
+
                 <div class="filter-group">
-                    <label for="partnershipFilter">الشراكة</label>
+
+                    <label for="partnershipFilter">
+                        الشراكة
+                    </label>
 
                     <select id="partnershipFilter">
-                        <option value="">كل الشراكات</option>
+
+                        <option value="">
+                            كل الشراكات
+                        </option>
+
                     </select>
+
                 </div>
 
+
                 <div class="filter-group">
-                    <label for="scholarshipFilter">دعم الابتعاث</label>
+
+                    <label for="scholarshipFilter">
+                        دعم الابتعاث
+                    </label>
 
                     <select id="scholarshipFilter">
-                        <option value="">الكل</option>
-                        <option value="Supported">مدعوم</option>
-                        <option value="Not Supported">غير مدعوم</option>
-                        <option value="To be confirmed">غير مؤكد</option>
+
+                        <option value="">
+                            الكل
+                        </option>
+
+                        <option value="Supported">
+                            مدعوم
+                        </option>
+
+                        <option value="Not Supported">
+                            غير مدعوم
+                        </option>
+
+                        <option value="To be confirmed">
+                            غير مؤكد
+                        </option>
+
                     </select>
+
                 </div>
 
             </div>
 
-            <button type="button" id="resetButton">
+
+            <button
+                type="button"
+                id="resetButton"
+            >
                 مسح البحث والفلاتر
             </button>
 
         </section>
 
-        <section id="cardsContainer" class="results-grid"></section>
 
-        <section id="emptyState" class="empty-state">
-            <h2>لا توجد نتائج مطابقة</h2>
+        <section
+            id="cardsContainer"
+            class="results-grid"
+        ></section>
+
+
+        <section
+            id="emptyState"
+            class="empty-state"
+        >
+
+            <h2>
+                لا توجد نتائج مطابقة
+            </h2>
 
             <p>
                 جرّب كتابة اسم تخصص آخر أو إزالة بعض الفلاتر.
             </p>
+
         </section>
 
-        <section id="errorState" class="error-state">
+
+        <section
+            id="errorState"
+            class="error-state"
+        >
             حدث خطأ أثناء تحميل البيانات.
         </section>
 
     </main>
+
 
     <script src="app.js"></script>
 
