@@ -615,6 +615,9 @@ function filterPrograms() {
 
     const selectedPartnership =
         partnershipFilter.value;
+
+    const selectedUniversity =
+    universityFilter.value;
     
     const selectedScholarship =
     scholarshipFilter.value;
