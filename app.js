@@ -15,6 +15,7 @@ const countryFilter = document.getElementById(
 const partnershipFilter = document.getElementById(
     "partnershipFilter"
 );
+
 const universityFilter = document.getElementById(
     "universityFilter"
 );
@@ -54,11 +55,9 @@ fetch("./partnerships.json")
     .then((response) => {
 
         if (!response.ok) {
-
             throw new Error(
                 "Failed to load data"
             );
-
         }
 
         return response.json();
@@ -241,8 +240,7 @@ function normalizeData(data) {
 
             /* =================================
                الشكل القديم
-               CEG / Study Group / Shorelight
-            ================================= */
+        ================================= */
 
 
             const degreeName =
@@ -258,6 +256,8 @@ function normalizeData(data) {
 
                 ...item,
 
+                university:
+                    item.university || "",
 
                 degree:
                     degreeName,
@@ -304,11 +304,6 @@ function getDegreeLevel(
         .toLowerCase();
 
 
-    /*
-       ماجستير مباشر
-       أو Integrated Master
-    */
-
     const masterPrefixes = [
 
         "msc",
@@ -320,7 +315,6 @@ function getDegreeLevel(
         "mbiochem",
         "mmath",
         "menv",
-        "mpharm",
         "mpharm",
         "master"
 
@@ -338,10 +332,6 @@ function getDegreeLevel(
 
     }
 
-
-    /*
-       بكالوريوس
-    */
 
     const bachelorPrefixes = [
 
@@ -369,11 +359,6 @@ function getDegreeLevel(
 
     }
 
-
-    /*
-       لو الاسم مش واضح،
-       نستخدم program
-    */
 
     if (
         program.includes(
@@ -434,9 +419,11 @@ function createFilterOptions() {
         partnershipFilter
     );
 
+
     clearGeneratedOptions(
-    universityFilter
-);
+        universityFilter
+    );
+
 
     addOptions(
 
@@ -469,16 +456,18 @@ function createFilterOptions() {
         )
 
     );
-    
-addOptions(
 
-    universityFilter,
 
-    getUniqueValues(
-        "university"
-    )
+    addOptions(
 
-);
+        universityFilter,
+
+        getUniqueValues(
+            "university"
+        )
+
+    );
+
 }
 
 
@@ -519,9 +508,7 @@ function getUniqueValues(
 
                 .map(
                     (item) =>
-                        item[
-                            propertyName
-                        ]
+                        item[propertyName]
                 )
 
                 .filter(Boolean)
@@ -616,11 +603,9 @@ function filterPrograms() {
     const selectedPartnership =
         partnershipFilter.value;
 
+
     const selectedUniversity =
-    universityFilter.value;
-    
-    const selectedScholarship =
-    scholarshipFilter.value;
+        universityFilter.value;
 
 
     const selectedScholarship =
@@ -693,13 +678,14 @@ function filterPrograms() {
 
                     item.partnership ===
                         selectedPartnership;
-                
+
+
                 const matchesUniversity =
 
-    selectedUniversity === "" ||
+                    selectedUniversity === "" ||
 
-    item.university ===
-        selectedUniversity;
+                    item.university ===
+                        selectedUniversity;
 
 
                 const matchesScholarship =
@@ -721,9 +707,8 @@ function filterPrograms() {
                     matchesCountry &&
 
                     matchesPartnership &&
-                    
-                    matchesUniversity &&
 
+                    matchesUniversity &&
 
                     matchesScholarship
 
@@ -1181,11 +1166,12 @@ function resetFilters() {
         "";
 
 
-    scholarshipFilter.value =
+    universityFilter.value =
         "";
 
-    universityFilter.value =
-    "";
+
+    scholarshipFilter.value =
+        "";
 
 
     filterPrograms();
@@ -1228,6 +1214,7 @@ partnershipFilter.addEventListener(
     "change",
     filterPrograms
 );
+
 
 universityFilter.addEventListener(
     "change",
