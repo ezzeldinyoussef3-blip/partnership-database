@@ -19,6 +19,16 @@
         "specialization": "Computer Science",
         "name": "BSc (Hons) Computer Science",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "BEng (Hons) Engineering with Artificial Intelligence",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "BEng (Hons) Engineering with Mechatronics Systems",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -215,6 +225,276 @@
         "specialization": "Criminology and Sociology",
         "name": "BSc (Hons) Criminology and Sociology",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Analytics and Actuarial Science",
+        "name": "BSc (Hons) Data Analytics and Actuarial Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Analytics and Actuarial Science",
+        "name": "BSc (Hons) Data Analytics and Actuarial Science with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Science",
+        "name": "MSci (Hons) Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics with Accounting",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "BEng (Hons) Electrical and Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "MEng (Hons) Electrical and Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Energy and Sustainability Engineering",
+        "name": "BEng (Hons) Energy and Sustainability Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Energy and Sustainability Engineering",
+        "name": "MEng (Hons) Energy and Sustainability Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "BEng (Hons) Engineering with Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "MEng (Hons) Engineering with Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English",
+        "name": "BA (Hons) English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English",
+        "name": "BA (Hons) English with Creative Writing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English",
+        "name": "BA (Hons) English with Publishing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance with Actuarial Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance with Actuarial Science with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Financial Economics",
+        "name": "BSc (Hons) Financial Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance with Data Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Politics",
+        "name": "BA (Hons) History and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BSc (Hons) International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BSc (Hons) International Business with Term Abroad and Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BSc (Hons) International Business with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Political Economy",
+        "name": "BSc (Hons) International Political Economy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Politics",
+        "name": "BSc (Hons) International Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Politics and Sociology",
+        "name": "BSc (Hons) International Politics and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Investment and Financial Risk Management",
+        "name": "BSc (Hons) Investment and Financial Risk Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Investment and Financial Risk Management",
+        "name": "BSc (Hons) Investment and Financial Risk Management with professional placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Journalism",
+        "name": "BA (Hons) Journalism",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Journalism, Politics and History",
+        "name": "BA (Hons) Journalism, Politics and History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law and Criminal Justice",
+        "name": "LLB (Hons) Law and Criminal Justice",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law and Criminology",
+        "name": "LLB (Hons) Law and Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Finance",
+        "name": "BSc (Hons) Mathematics and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Finance",
+        "name": "BSc (Hons) Mathematics and Finance with placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Data Science with placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics, Statistics and Data Science",
+        "name": "BSc (Hons) Mathematics, Statistics and Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical and Design Engineering",
+        "name": "BEng (Hons) Mechanical and Design Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical and Design Engineering",
+        "name": "MEng (Hons) Mechanical and Design Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Media Production",
+        "name": "BA (Hons) Media Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Media and Communications",
+        "name": "BA (Hons) Media and Communications",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music Performance",
+        "name": "BA (Hons) Music Performance with Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music, Sound and Technology",
+        "name": "BSc (Hons) Music, Sound and Technology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BSc (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology with Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BSc (Hons) Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology with Psychology",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -258,6 +538,46 @@
       {
         "specialization": "Animation",
         "name": "BA (Hons) Animation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Event Production",
+        "name": "BSc (Hons) Event Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Games Art",
+        "name": "BA (Hons) Games Art",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Games Design",
+        "name": "BSc (Hons) Games Design",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music Business and Management",
+        "name": "BA (Hons) Music Business and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music Production",
+        "name": "BA (Hons) Music Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Popular Music Performance",
+        "name": "BA (Hons) Popular Music Performance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Songwriting and Vocal Performance",
+        "name": "BA (Hons) Songwriting and Vocal Performance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sound Engineering & Audio Production",
+        "name": "BA (Hons) Sound Engineering & Audio Production",
         "program": "Undergraduate"
       }
     ]
@@ -461,6 +781,491 @@
       {
         "specialization": "Computer Systems Engineering",
         "name": "BEng (Hons) Computer Systems Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Econ) (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Finance",
+        "name": "BSc (Econ) (Hons) Economics and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Finance",
+        "name": "BSc (Econ) (Hons) Economics and Finance with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Finance",
+        "name": "BSc (Econ) (Hons) Economics and Finance with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and International Finance",
+        "name": "BSc (Econ) (Hons) Economics and International Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and International Finance",
+        "name": "BSc (Econ) (Hons) Economics and International Finance with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Politics",
+        "name": "BSc (Econ) (Hons) Economics and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Politics",
+        "name": "BSc (Econ) (Hons) Economics and Politics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Econ) (Hons) Economics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Econ) (Hons) Economics with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics, Finance and Management",
+        "name": "BSc (Econ) (Hons) Economics, Finance and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics, Finance and Management",
+        "name": "BSc (Econ) (Hons) Economics, Finance and Management with a Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics, Finance and Management",
+        "name": "BSc (Econ) (Hons) Economics, Finance and Management with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics, Statistics and Mathematics",
+        "name": "BSc (Econ) (Hons) Economics, Statistics and Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "BEng (Hons) Electrical and Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "BEng (Hons) Electrical and Electronic Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "BEng (Hons) Electrical and Electronic Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Language and Linguistics",
+        "name": "BA (Hons) English Language and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English and European Law",
+        "name": "LLB (Hons) English and European Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science with Business Management with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film",
+        "name": "BA (Hons) Film",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Econ) (Hons) Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Econ) (Hons) Finance with a Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BA (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography with Business Management with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BA (Hons) Geography with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and International Relations",
+        "name": "BA (Hons) History and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Politics",
+        "name": "BA (Hons) History and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Geography",
+        "name": "BA (Hons) Human Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Geography and Environment",
+        "name": "BA (Hons) Human Geography and Environment",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Geography",
+        "name": "BA (Hons) Human Geography with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Analytics",
+        "name": "BSc (Hons) International Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Analytics",
+        "name": "BSc (Hons) International Business Analytics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Analytics",
+        "name": "BSc (Hons) International Business Analytics with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law and Politics",
+        "name": "LLB (Hons) Law and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law with Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Linguistics",
+        "name": "BA (Hons) Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing and Management",
+        "name": "BSc (Hons) Marketing and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "BEng (Hons) Materials Science and Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "MEng (Hons) Materials Science and Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "BEng (Hons) Materials Science and Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "MEng (Hons) Materials Science and Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "BEng (Hons) Materials Science and Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Statistics",
+        "name": "BSc (Hons) Mathematics and Statistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Statistics",
+        "name": "BSc (Hons) Mathematics and Statistics with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Statistics",
+        "name": "BSc (Hons) Mathematics and Statistics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Computing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Computing with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Finance and Accounting",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Finance and Accounting with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Finance and Accounting with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Management with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Management with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Professional Placement",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Medical Genetics",
+        "name": "BSc (Hons) Medical Genetics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages",
+        "name": "BA (Hons) Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "BSc (Hons) Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "BSc (Hons) Neuroscience with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmaceutical Chemistry",
+        "name": "BSc (Hons) Pharmaceutical Chemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmaceutical Chemistry",
+        "name": "BSc (Hons) Pharmaceutical Chemistry with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology and Innovative Therapeutics",
+        "name": "BSc (Hons) Pharmacology and Innovative Therapeutics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology and Innovative Therapeutics",
+        "name": "BSc (Hons) Pharmacology and Innovative Therapeutics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics with Professional Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BA (Hons) Politics and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BA (Hons) Politics and International Relations with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Sociology",
+        "name": "BA (Hons) Politics and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Robotics Engineering",
+        "name": "BEng (Hons) Robotics Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Robotics Engineering",
+        "name": "BEng (Hons) Robotics Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Robotics Engineering",
+        "name": "BEng (Hons) Robotics Engineering with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Zoology",
+        "name": "BSc (Hons) Zoology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Zoology",
+        "name": "BSc (Hons) Zoology with Year Abroad",
         "program": "Undergraduate"
       }
     ]
@@ -790,6 +1595,656 @@
         "specialization": "Criminology",
         "name": "BA (Hons) Criminology with Year Abroad",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Media and Communications",
+        "name": "BA (Hons) Digital Media and Communications",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Media and Creative Industries",
+        "name": "BA (Hons) Digital Media and Creative Industries",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Drama and Film",
+        "name": "BA (Hons) Drama and Film",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Politics",
+        "name": "BSc (Hons) Economics and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education",
+        "name": "BA (Hons) Education",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education and Sociology",
+        "name": "BA (Hons) Education and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronics and Electrical Engineering",
+        "name": "MEng (Hons) Electronics and Electrical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronics and Electrical Engineering",
+        "name": "BEng (Hons) Electronics and Electrical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronics and Electrical Engineering",
+        "name": "BEng (Hons) Electronics and Electrical Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronics and Electrical Engineering",
+        "name": "MEng (Hons) Electronics and Electrical Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Energy Engineering",
+        "name": "BEng (Hons) Energy Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "BEng (Hons) Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Language and Linguistics",
+        "name": "BA (Hons) English Language and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature",
+        "name": "BA (Hons) English Literature",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature and Creative Writing",
+        "name": "BA (Hons) English Literature and Creative Writing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature and Film",
+        "name": "BA (Hons) English Literature and Film",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature and History",
+        "name": "BA (Hons) English Literature and History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature and Language",
+        "name": "BA (Hons) English Literature and Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Change and Sustainability",
+        "name": "BSc (Hons) Environmental Change and Sustainability",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Change and Sustainability",
+        "name": "MSci (Hons) Environmental Change and Sustainability",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Change and Sustainability",
+        "name": "BSc (Hons) Environmental Change and Sustainability with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Engineering and Geoscience",
+        "name": "BSc (Hons) Environmental Engineering and Geoscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Geoscience",
+        "name": "BSc (Hons) Environmental Geoscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Geoscience",
+        "name": "MSci (Hons) Environmental Geoscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Geoscience",
+        "name": "BSc (Hons) Environmental Geoscience with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "MSci (Hons) Environmental Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and Creative Writing",
+        "name": "BA (Hons) Film and Creative Writing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BA (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "MSci (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography and Urban and Regional Planning",
+        "name": "BSc (Hons) Geography and Urban and Regional Planning",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "MSci (Hons) Geography with International Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Archaeology",
+        "name": "BA (Hons) History and Archaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Politics",
+        "name": "BA (Hons) History and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History of Art",
+        "name": "BA (Hons) History of Art",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Neuroscience",
+        "name": "BSc (Hons) Human Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BSc (Hons) International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Development and Politics",
+        "name": "BA (Hons) International Development and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Development and Politics",
+        "name": "BA (Hons) International Development and Politics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Event Management",
+        "name": "BA (Hons) International Event Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Hotel Management",
+        "name": "BA (Hons) International Hotel Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and Development",
+        "name": "BA (Hons) International Relations and Development",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and Development",
+        "name": "BA (Hons) International Relations and Development with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with Economics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with French",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with Spanish",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law with Business Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing with Business Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing with Business Analytics and Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing with Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematical Economics and Statistics",
+        "name": "BSc (Hons) Mathematical Economics and Statistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematical Sciences",
+        "name": "BSc (Hons) Mathematical Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Computer Science",
+        "name": "BSc (Hons) Mathematics and Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Music",
+        "name": "BSc (Hons) Mathematics and Music",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematical Sciences and Philosophy",
+        "name": "BSc (Hons) Mathematical Sciences and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering (Automotive)",
+        "name": "BEng (Hons) Mechanical Engineering (Automotive)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering (Automotive)",
+        "name": "MEng (Hons) Mechanical Engineering (Automotive)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering with Industrial Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechatronics and Robotic Engineering",
+        "name": "BEng (Hons) Mechatronics and Robotic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechatronics and Robotic Engineering",
+        "name": "MEng (Hons) Mechatronics and Robotic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechatronics and Robotic Engineering",
+        "name": "MEng (Hons) Mechatronics and Robotic Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechatronics and Robotic Engineering",
+        "name": "BEng (Hons) Mechatronics and Robotic Engineering with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Medical Biochemistry",
+        "name": "BSc (Hons) Medical Biochemistry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Medical Genetics",
+        "name": "BSc (Hons) Medical Genetics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Microbiology",
+        "name": "BSc (Hons) Microbiology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Microbiology",
+        "name": "MSci (Hons) Microbiology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages and English Literature",
+        "name": "BA (Hons) Modern Languages and English Literature",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages and History",
+        "name": "BA (Hons) Modern Languages and History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages",
+        "name": "BA (Hons) Modern Languages with Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern and Contemporary History",
+        "name": "BA (Hons) Modern and Contemporary History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music",
+        "name": "BMus (Hons) Music",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Nursing (Adult)",
+        "name": "BNurs (Hons) Nursing (Adult)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Palaeontology and Geology",
+        "name": "BSc (Hons) Palaeontology and Geology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Palaeontology and Geology",
+        "name": "MSci (Hons) Palaeontology and Geology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Palaeontology and Geology",
+        "name": "MSci (Hons) Palaeontology and Geology with an International Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacy",
+        "name": "MPharm (Hons) Pharmacy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy",
+        "name": "BA (Hons) Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy, Politics and Economics",
+        "name": "BA (Hons) Philosophy, Politics and Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy, Religion and Ethics",
+        "name": "BA (Hons) Philosophy, Religion and Ethics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physical Geography and Environment",
+        "name": "BSc (Hons) Physical Geography and Environment",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MSci (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics and Astrophysics",
+        "name": "BSc (Hons) Physics and Astrophysics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics and Astrophysics",
+        "name": "MSci (Hons) Physics and Astrophysics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics and Astrophysics",
+        "name": "BSc (Hons) Physics and Astrophysics (International Study)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Policy, Politics and Economics",
+        "name": "BA (Hons) Policy, Politics and Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Policy, Politics and Economics",
+        "name": "BA (Hons) Policy, Politics and Economics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BA (Hons) Politics and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BA (Hons) Politics and International Relations with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Modern Languages",
+        "name": "BA (Hons) Politics and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Philosophy",
+        "name": "BA (Hons) Politics and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Philosophy",
+        "name": "BA (Hons) Politics and Philosophy with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Social Policy",
+        "name": "BA (Hons) Politics and Social Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Social Policy",
+        "name": "BA (Hons) Politics and Social Policy with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics, Philosophy and Economics",
+        "name": "BA (Hons) Politics, Philosophy and Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology and Psychological Practice",
+        "name": "MSci (Hons) Psychology and Psychological Practice",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology in Education",
+        "name": "BSc (Hons) Psychology in Education",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Anthropology",
+        "name": "BA (Hons) Social Anthropology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy",
+        "name": "BA (Hons) Social Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Criminology",
+        "name": "BA (Hons) Social Policy and Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Criminology",
+        "name": "BA (Hons) Social Policy and Criminology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Sociology",
+        "name": "BA (Hons) Social Policy and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Sociology",
+        "name": "BA (Hons) Social Policy and Sociology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Sciences",
+        "name": "BASc (Hons) Social Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology and Criminology",
+        "name": "BA (Hons) Sociology and Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology and Criminology",
+        "name": "BA (Hons) Sociology and Criminology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sport, Exercise and Health Sciences",
+        "name": "BSc (Hons) Sport, Exercise and Health Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sport, PE and Coaching Science",
+        "name": "BSc (Hons) Sport, PE and Coaching Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sports Management",
+        "name": "BA (Hons) Sports Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics and Applied Mathematics",
+        "name": "BSc (Hons) Theoretical Physics and Applied Mathematics",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -1076,6 +2531,721 @@
         "specialization": "Criminology",
         "name": "BSc (Hons) Criminology with Study Abroad",
         "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Science",
+        "name": "BSc (Hons) Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Design Engineering",
+        "name": "BEng (Hons) Design Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Design Engineering",
+        "name": "MEng (Hons) Design Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BA (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Accounting",
+        "name": "BSc (Hons) Economics and Accounting",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Accounting",
+        "name": "BSc (Hons) Economics and Accounting with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Data Science",
+        "name": "BSc (Hons) Economics and Data Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Econometrics",
+        "name": "BSc (Hons) Economics and Econometrics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Econometrics",
+        "name": "BSc (Hons) Economics and Econometrics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Management",
+        "name": "BSc (Hons) Economics and Management with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Mathematics",
+        "name": "BSc (Hons) Economics and Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Philosophy",
+        "name": "BSc (Hons) Economics and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Politics",
+        "name": "BSc (Hons) Economics and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Politics",
+        "name": "BSc (Hons) Economics and Politics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics with Econometrics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education Studies",
+        "name": "BSc (Hons) Education Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education Studies",
+        "name": "BSc (Hons) Education Studies with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "MEng (Hons) Electrical and Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electrical and Electronic Engineering",
+        "name": "BEng (Hons) Electrical and Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering",
+        "name": "MEng (Hons) Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering Mathematics",
+        "name": "MEng (Hons) Engineering Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering Mathematics",
+        "name": "BEng (Hons) Engineering Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Engineering Mathematics",
+        "name": "BEng (Hons) Engineering Mathematics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English",
+        "name": "BA (Hons) English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English and History",
+        "name": "BA (Hons) English and History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English and Philosophy",
+        "name": "BA (Hons) English and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English",
+        "name": "BA (Hons) English with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and English",
+        "name": "BA (Hons) Film and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and Modern Languages",
+        "name": "BA (Hons) Film and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and Television",
+        "name": "BA (Hons) Film and Television",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and Television",
+        "name": "BA (Hons) Film and Television with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "MSci (Hons) Geography with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "MSci (Hons) Geography with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Modern Languages",
+        "name": "BA (Hons) History and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History of Art",
+        "name": "BA (Hons) History of Art",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History of Art and Modern Languages",
+        "name": "BA (Hons) History of Art and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "MArts (Hons) History with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Neuroscience",
+        "name": "BSc (Hons) Human Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Evolution",
+        "name": "BSc (Hons) Human Evolution",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Sciences",
+        "name": "BSc (Hons) Human Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Human Sciences",
+        "name": "MSci (Hons) Human Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BSc (Hons) International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Management",
+        "name": "BSc (Hons) International Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Management and Modern Languages",
+        "name": "BA (Hons) International Business Management and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Management",
+        "name": "BSc (Hons) International Business Management with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business Management",
+        "name": "BSc (Hons) International Business Management with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Social and Public Policy",
+        "name": "BSc (Hons) International Social and Public Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Social and Public Policy",
+        "name": "BSc (Hons) International Social and Public Policy with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law and Modern Languages",
+        "name": "LLB (Hons) Law and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "BEng (Hons) Materials Science and Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Materials Science and Engineering",
+        "name": "MEng (Hons) Materials Science and Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Computer Science",
+        "name": "BSc (Hons) Mathematics and Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Computer Science",
+        "name": "BSc (Hons) Mathematics and Computer Science with Industrial Year",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Philosophy",
+        "name": "BSc (Hons) Mathematics and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Physics",
+        "name": "BSc (Hons) Mathematics and Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Physics",
+        "name": "MSci (Hons) Mathematics and Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Statistics",
+        "name": "BSc (Hons) Mathematics and Statistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Computing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Statistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics with Statistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics with Statistics for Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "MSci (Hons) Mathematics with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics with Study in Continental Europe",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "BEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical Engineering",
+        "name": "MEng (Hons) Mechanical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical and Electrical Engineering",
+        "name": "BEng (Hons) Mechanical and Electrical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mechanical and Electrical Engineering",
+        "name": "MEng (Hons) Mechanical and Electrical Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Medical Microbiology",
+        "name": "BSc (Hons) Medical Microbiology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Medical Microbiology",
+        "name": "MSci (Hons) Medical Microbiology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages",
+        "name": "BA (Hons) Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Money, Banking and Finance",
+        "name": "BA (Hons) Money, Banking and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music",
+        "name": "BMus (Hons) Music",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music and Modern Languages",
+        "name": "BA (Hons) Music and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music",
+        "name": "MArts (Hons) Music with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "BSc (Hons) Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "MSci (Hons) Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Palaeontology and Evolution",
+        "name": "MSci (Hons) Palaeontology and Evolution",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Palaeontology and Evolution",
+        "name": "BSc (Hons) Palaeontology and Evolution",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology",
+        "name": "MPharm (Hons) Pharmacology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology",
+        "name": "BSc (Hons) Pharmacology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology",
+        "name": "BSc (Hons) Pharmacology with Study in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy",
+        "name": "BA (Hons) Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy and Economics",
+        "name": "BSc (Hons) Philosophy and Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy and Economics",
+        "name": "BSc (Hons) Philosophy and Economics with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy and Modern Languages",
+        "name": "BA (Hons) Philosophy and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy and Politics",
+        "name": "BSc (Hons) Philosophy and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Philosophy and Theology",
+        "name": "BA (Hons) Philosophy and Theology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MSci (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics (International Study)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MSci (Hons) Physics (International Study)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics and Philosophy",
+        "name": "BSc (Hons) Physics and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics and Philosophy",
+        "name": "MSci (Hons) Physics and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MSci (Hons) Physics with Study Abroad in a Modern Language",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physiological Science",
+        "name": "BSc (Hons) Physiological Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physiological Science",
+        "name": "MSci (Hons) Physiological Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Plant Sciences",
+        "name": "BSc (Hons) Plant Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Plant Sciences",
+        "name": "MSci (Hons) Plant Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Political Science",
+        "name": "BSc (Hons) Political Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BSc (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BSc (Hons) Politics and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and Sociology",
+        "name": "BSc (Hons) Politics and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "MSci (Hons) Psychology with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Religion and Theology",
+        "name": "BA (Hons) Religion and Theology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy",
+        "name": "BSc (Hons) Social Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Politics",
+        "name": "BSc (Hons) Social Policy and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy and Sociology",
+        "name": "BSc (Hons) Social Policy and Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy",
+        "name": "BSc (Hons) Social Policy with Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy",
+        "name": "BSc (Hons) Social Policy with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social Policy",
+        "name": "BA (Hons) Social Policy with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BSc (Hons) Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology and Philosophy",
+        "name": "BA (Hons) Sociology and Philosophy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BSc (Hons) Sociology with Study Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre and English",
+        "name": "BA (Hons) Theatre and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre and Film",
+        "name": "BA (Hons) Theatre and Film",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre and Modern Languages",
+        "name": "BA (Hons) Theatre and Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre and Performance Studies",
+        "name": "BA (Hons) Theatre and Performance Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre",
+        "name": "MArts (Hons) Theatre with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theatre",
+        "name": "BA (Hons) Theatre with Innovation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics",
+        "name": "BSc (Hons) Theoretical Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics",
+        "name": "MSci (Hons) Theoretical Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Veterinary Nursing and Companion Animal Behaviour",
+        "name": "BSc (Hons) Veterinary Nursing and Companion Animal Behaviour",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "BSc Veterinary Science",
+        "name": "BSc Veterinary Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Virology and Immunology",
+        "name": "BSc (Hons) Virology and Immunology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Virology and Immunology",
+        "name": "MSci (Hons) Virology and Immunology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Zoology",
+        "name": "BSc (Hons) Zoology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Zoology",
+        "name": "MSci (Hons) Zoology",
+        "program": "Undergraduate"
       }
     ]
   },
@@ -1106,17 +3276,27 @@
     "notes": "Kaplan Partner University"
   },
   {
-    "specialization": "All Specializations",
     "partnership": "Kaplan",
     "country": "UK",
     "university": "University of Liverpool",
-    "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
     "languageRequirements": "سيتم إضافة متطلبات اللغة",
     "gpaRequirement": "سيتم إضافة المعدل",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan Partner University",
+    "degrees": [
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law with a Year Abroad",
+        "program": "Undergraduate"
+      }
+    ]
   },
   {
     "partnership": "Kaplan",
@@ -1132,6 +3312,11 @@
       {
         "specialization": "Business and Management",
         "name": "Business and Management BSc (Hons)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Industrial Economics BSc (Hons)",
+        "name": "Industrial Economics BSc (Hons)",
         "program": "Undergraduate"
       }
     ]
@@ -1305,6 +3490,351 @@
       {
         "specialization": "Criminology",
         "name": "BA (Hons) Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Science and Analytics",
+        "name": "BSc (Hons) Data Science and Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Data Science",
+        "name": "BSc (Hons) Data Science with a Year in Industry",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Marketing",
+        "name": "BA (Hons) Digital Marketing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Media Production",
+        "name": "BA (Hons) Digital Media Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Media and Communication",
+        "name": "BA (Hons) Digital Media and Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Digital Media, Public Relations and Advertising",
+        "name": "BA (Hons) Digital Media, Public Relations and Advertising",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Management",
+        "name": "BA (Hons) Economics and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Language and International Communication",
+        "name": "BA (Hons) English Language and International Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Language and Linguistics",
+        "name": "BA (Hons) English Language and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Literature",
+        "name": "BA (Hons) English Literature",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English and Classical Studies",
+        "name": "BA (Hons) English and Classical Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "European Legal Studies",
+        "name": "LLB (Hons) European Legal Studies",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Fashion Business Management",
+        "name": "BA (Hons) Fashion Business Management with Professional Experience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Fashion Design",
+        "name": "BA (Hons) Fashion Design",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Fashion Marketing and Promotion",
+        "name": "BA (Hons) Fashion Marketing and Promotion",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Fashion Photography",
+        "name": "BA (Hons) Fashion Photography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Film and Television Production",
+        "name": "BA (Hons) Film and Television Production",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance",
+        "name": "BSc (Hons) Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Finance and Business Management",
+        "name": "BA (Hons) Finance and Business Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Financial Economics",
+        "name": "BA (Hons) Financial Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "French and English",
+        "name": "BA (Hons) French and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "French and International Business",
+        "name": "BA (Hons) French and International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "French and International Communication",
+        "name": "BA (Hons) French and International Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "French and International Relations",
+        "name": "BA (Hons) French and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "French and Linguistics",
+        "name": "BA (Hons) French and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Games Art",
+        "name": "BA (Hons) Games Art",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Games Design",
+        "name": "BA (Hons) Games Design",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History and Politics",
+        "name": "BA (Hons) History and Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Illustration",
+        "name": "BA (Hons) Illustration",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Interior Architecture",
+        "name": "BA (Hons) Interior Architecture",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Business",
+        "name": "BA (Hons) International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Communication and International Business",
+        "name": "BA (Hons) International Communication and International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Law and Globalisation",
+        "name": "LLB (Hons) International Law and Globalisation",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Marketing",
+        "name": "BA (Hons) International Marketing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law and International Relations",
+        "name": "LLB (Hons) Law and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law with Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law with French Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing",
+        "name": "BSc (Hons) Marketing",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing Communications",
+        "name": "BA (Hons) Marketing Communications with Integration",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing Management",
+        "name": "BA (Hons) Marketing Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Marketing and Data Analytics",
+        "name": "BSc (Hons) Marketing and Data Analytics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Modern Languages",
+        "name": "BA (Hons) Modern Languages",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Music Production, Performance and Business",
+        "name": "BA (Hons) Music Production, Performance and Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Pharmacology and Physiology",
+        "name": "BSc (Hons) Pharmacology and Physiology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Photography",
+        "name": "BA (Hons) Photography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics and International Relations",
+        "name": "BA (Hons) Politics and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology and Counselling",
+        "name": "BSc (Hons) Psychology and Counselling",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology and Criminology",
+        "name": "BSc (Hons) Psychology and Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Public Health",
+        "name": "BSc (Hons) Public Health",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Quantity Surveying and Commercial Management",
+        "name": "BSc (Hons) Quantity Surveying and Commercial Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Real Estate",
+        "name": "BSc (Hons) Real Estate",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology and Criminology",
+        "name": "BA (Hons) Sociology and Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology with Criminology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Software Engineering",
+        "name": "BEng (Hons) Software Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Software Engineering",
+        "name": "BEng (Hons) Software Engineering with Electronics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Spanish and English",
+        "name": "BA (Hons) Spanish and English",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Spanish and International Business",
+        "name": "BA (Hons) Spanish and International Business",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Spanish and International Communication",
+        "name": "BA (Hons) Spanish and International Communication",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Spanish and International Relations",
+        "name": "BA (Hons) Spanish and International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Spanish and Linguistics",
+        "name": "BA (Hons) Spanish and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Tourism Management",
+        "name": "BA (Hons) Tourism Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Urban Planning and Design",
+        "name": "BA (Hons) Urban Planning and Design",
         "program": "Undergraduate"
       }
     ]
@@ -1558,6 +4088,366 @@
       {
         "specialization": "Criminology and Social Psychology",
         "name": "BA (Hons) Criminology and Social Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ecology",
+        "name": "MBiol (Hons) Ecology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ecology",
+        "name": "BSc (Hons) Ecology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ecology and Conservation Biology",
+        "name": "BSc (Hons) Ecology and Conservation Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Ecology and Conservation Biology",
+        "name": "MBiol (Hons) Ecology and Conservation Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics",
+        "name": "BSc (Hons) Economics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Econometrics",
+        "name": "BSc (Hons) Economics and Econometrics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Finance",
+        "name": "BSc (Hons) Economics and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Finance",
+        "name": "BSc (Hons) Economics and Finance with Year Abroad",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Management",
+        "name": "BSc (Hons) Economics and Management",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Economics and Mathematics",
+        "name": "BSc (Hons) Economics and Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education",
+        "name": "BA (Hons) Education",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education and French",
+        "name": "BA (Hons) Education and French (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education and German",
+        "name": "BA (Hons) Education and German (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education and Italian",
+        "name": "BA (Hons) Education and Italian (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Education and Spanish",
+        "name": "BA (Hons) Education and Spanish (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic Engineering",
+        "name": "BEng (Hons) Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic Engineering",
+        "name": "MEng (Hons) Electronic Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic Engineering",
+        "name": "BEng (Hons) Electronic Engineering with Music Technology Systems",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic Engineering",
+        "name": "MEng (Hons) Electronic Engineering with Music Technology Systems",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic and Computer Engineering",
+        "name": "BEng (Hons) Electronic and Computer Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Electronic and Computer Engineering",
+        "name": "MEng (Hons) Electronic and Computer Engineering",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "English Language and Linguistics",
+        "name": "BA (Hons) English Language and Linguistics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Environmental Science",
+        "name": "BSc (Hons) Environmental Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Genetics",
+        "name": "MBiol (Hons) Genetics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Genetics",
+        "name": "BSc (Hons) Genetics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Geography",
+        "name": "BSc (Hons) Geography",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Historical Archaeology",
+        "name": "BA (Hons) Historical Archaeology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "History",
+        "name": "BA (Hons) History",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Immunology and Infection Disease",
+        "name": "BSc (Hons) Immunology and Infection Disease",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Immunology and Infection Disease",
+        "name": "MSci (Hons) Immunology and Infection Disease",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations",
+        "name": "BA (Hons) International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and French",
+        "name": "BA (Hons) International Relations and French (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and German",
+        "name": "BA (Hons) International Relations and German (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and Italian",
+        "name": "BA (Hons) International Relations and Italian (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "International Relations and Spanish",
+        "name": "BA (Hons) International Relations and Spanish (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Law",
+        "name": "LLB (Hons) Law",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts with French (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts with German (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts with Italian (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Liberal Arts",
+        "name": "BA (Hons) Liberal Arts with Spanish (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics",
+        "name": "BSc (Hons) Mathematics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Computer Science",
+        "name": "BSc (Hons) Mathematics and Computer Science",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Finance",
+        "name": "BSc (Hons) Mathematics and Finance",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Physics",
+        "name": "MMath/Phys (Hons) Mathematics and Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Mathematics and Physics",
+        "name": "BSc (Hons) Mathematics and Physics (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Molecular Cell Biology",
+        "name": "MBiol (Hons) Molecular Cell Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Molecular Cell Biology",
+        "name": "BSc (Hons) Molecular Cell Biology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "BSc (Hons) Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Neuroscience",
+        "name": "MBiol (Hons) Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physical Geography and Environment",
+        "name": "MEnv (Hons) Physical Geography and Environment",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MPhys (Hons) Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MPhys (Hons) Physics (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics with Astrophysics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "MPhys (Hons) Physics with Astrophysics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Physics",
+        "name": "BSc (Hons) Physics with Astrophysics (with a year abroad)",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Politics",
+        "name": "BA (Hons) Politics with International Relations",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "BSc (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology",
+        "name": "MSci (Hons) Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology and Neuroscience",
+        "name": "BSc (Hons) Psychology and Neuroscience",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Psychology in Education",
+        "name": "BSc (Hons) Psychology in Education",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social and Political Sciences",
+        "name": "BA (Hons) Social and Political Sciences",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Social and Public Policy",
+        "name": "BA (Hons) Social and Public Policy",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology with Education",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Sociology",
+        "name": "BA (Hons) Sociology with Social Psychology",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics",
+        "name": "BSc (Hons) Theoretical Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics",
+        "name": "MPhys (Hons) Theoretical Physics",
+        "program": "Undergraduate"
+      },
+      {
+        "specialization": "Theoretical Physics",
+        "name": "BSc (Hons) Theoretical Physics (with a year abroad)",
         "program": "Undergraduate"
       }
     ]
