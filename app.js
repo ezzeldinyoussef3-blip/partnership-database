@@ -1,53 +1,52 @@
-const searchInput = document.getElementById("searchInput");
+/* =========================================
+   Elements
+========================================= */
 
-const specializationFilter = document.getElementById(
-    "specializationFilter"
-);
+const searchInput =
+    document.getElementById("searchInput");
 
-const degreeLevelFilter = document.getElementById(
-    "degreeLevelFilter"
-);
+const specializationFilter =
+    document.getElementById("specializationFilter");
 
-const countryFilter = document.getElementById(
-    "countryFilter"
-);
+const degreeLevelFilter =
+    document.getElementById("degreeLevelFilter");
 
-const partnershipFilter = document.getElementById(
-    "partnershipFilter"
-);
+const countryFilter =
+    document.getElementById("countryFilter");
 
-const universityFilter = document.getElementById(
-    "universityFilter"
-);
+const partnershipFilter =
+    document.getElementById("partnershipFilter");
 
-const scholarshipFilter = document.getElementById(
-    "scholarshipFilter"
-);
+const universityFilter =
+    document.getElementById("universityFilter");
 
-const resetButton = document.getElementById("resetButton");
+const pathwayFilter =
+    document.getElementById("pathwayFilter");
 
-const cardsContainer = document.getElementById(
-    "cardsContainer"
-);
+const scholarshipFilter =
+    document.getElementById("scholarshipFilter");
 
-const resultCount = document.getElementById(
-    "resultCount"
-);
+const resetButton =
+    document.getElementById("resetButton");
 
-const emptyState = document.getElementById(
-    "emptyState"
-);
+const cardsContainer =
+    document.getElementById("cardsContainer");
 
-const errorState = document.getElementById(
-    "errorState"
-);
+const resultCount =
+    document.getElementById("resultCount");
+
+const emptyState =
+    document.getElementById("emptyState");
+
+const errorState =
+    document.getElementById("errorState");
 
 
 let programs = [];
 
 
 /* =========================================
-   تحميل البيانات
+   Load Data
 ========================================= */
 
 fetch("./partnerships.json")
@@ -55,9 +54,11 @@ fetch("./partnerships.json")
     .then((response) => {
 
         if (!response.ok) {
+
             throw new Error(
-                "Failed to load data"
+                `Failed to load partnerships.json: ${response.status}`
             );
+
         }
 
         return response.json();
@@ -65,6 +66,14 @@ fetch("./partnerships.json")
     })
 
     .then((data) => {
+
+        if (!Array.isArray(data)) {
+
+            throw new Error(
+                "partnerships.json must contain an array"
+            );
+
+        }
 
         programs = normalizeData(data);
 
@@ -96,7 +105,7 @@ fetch("./partnerships.json")
 
 
 /* =========================================
-   تحويل البيانات إلى شكل موحد
+   Normalize Data
 ========================================= */
 
 function normalizeData(data) {
@@ -106,172 +115,39 @@ function normalizeData(data) {
 
     data.forEach((item) => {
 
-
-        /* =================================
-           الشكل الجديد
-           University + Degrees
-        ================================= */
+        /*
+         * New / nested format:
+         * university object containing degrees[]
+         */
 
         if (Array.isArray(item.degrees)) {
 
-
-            item.degrees.forEach(
-                (degree) => {
-
-
-                    const degreeName =
-
-                        degree.name ||
-
-                        degree.degree ||
-
-                        "";
-
-
-                    normalizedPrograms.push({
-
-                        partnership:
-                            item.partnership ||
-                            "",
-
-                        country:
-                            item.country ||
-                            "",
-
-                        university:
-                            item.university ||
-                            "",
-
-
-                        specialization:
-
-                            degree.specialization ||
-
-                            degree.subject ||
-
-                            "All Specializations",
-
-
-                        degree:
-                            degreeName,
-
-
-                        degreeLevel:
-                            getDegreeLevel(
-                                degreeName,
-                                degree.program ||
-                                degree.level ||
-                                ""
-                            ),
-
-
-                        program:
-
-                            degree.program ||
-
-                            degree.level ||
-
-                            item.program ||
-
-                            "",
-
-
-                        price:
-
-                            degree.price ||
-
-                            item.price ||
-
-                            "سيتم إضافة السعر",
-
-
-                        scholarshipSupport:
-
-                            degree.scholarshipSupport ||
-
-                            item.scholarshipSupport ||
-
-                            "To be confirmed",
-
-
-                        languageRequirements:
-
-                            degree.languageRequirements ||
-
-                            item.languageRequirements ||
-
-                            "سيتم إضافة متطلبات اللغة",
-
-
-                        gpaRequirement:
-
-                            degree.gpaRequirement ||
-
-                            item.gpaRequirement ||
-
-                            "سيتم إضافة المعدل",
-
-
-                        intake:
-
-                            degree.intake ||
-
-                            item.intake ||
-
-                            "سيتم إضافته",
-
-
-                        notes:
-
-                            degree.notes ||
-
-                            item.notes ||
-
-                            ""
-
-                    });
-
-                }
-            );
-
-
-        } else {
-
-
-            /* =================================
-               الشكل القديم
-        ================================= */
-
-
-            const degreeName =
-
-                item.degree ||
-
-                item.program ||
-
-                "";
-
-
-            normalizedPrograms.push({
-
-                ...item,
-
-                university:
-                    item.university || "",
-
-                degree:
-                    degreeName,
-
-
-                degreeLevel:
-                    getDegreeLevel(
-                        degreeName,
-                        item.program || ""
+            item.degrees.forEach((degree) => {
+
+                normalizedPrograms.push(
+                    createNormalizedProgram(
+                        item,
+                        degree
                     )
+                );
 
             });
 
+            return;
+
         }
+
+
+        /*
+         * Old flat format
+         */
+
+        normalizedPrograms.push(
+            createNormalizedProgram(
+                item,
+                item
+            )
+        );
 
     });
 
@@ -282,7 +158,323 @@ function normalizeData(data) {
 
 
 /* =========================================
-   تحديد بكالوريوس / ماجستير
+   Build normalized record
+========================================= */
+
+function createNormalizedProgram(
+    parent,
+    degree
+) {
+
+    const degreeName =
+        degree.name ||
+        degree.degree ||
+        parent.degree ||
+        "";
+
+
+    const programName =
+        degree.program ||
+        degree.level ||
+        parent.program ||
+        "";
+
+
+    const pathwayType =
+        degree.pathwayType ||
+        parent.pathwayType ||
+        detectPathwayType(programName) ||
+        "";
+
+
+    const pathway =
+        degree.pathway ||
+        parent.pathway ||
+        "";
+
+
+    const englishOptions = normalizeEnglishOptions(
+        degree.englishOptions ||
+        parent.englishOptions ||
+        []
+    );
+
+
+    const academicRequirements =
+        normalizeAcademicRequirements(
+            degree.academicRequirements ||
+            parent.academicRequirements ||
+            null,
+            degree.gpaRequirement ||
+            parent.gpaRequirement ||
+            ""
+        );
+
+
+    return {
+
+        partnership:
+            parent.partnership ||
+            degree.partnership ||
+            "",
+
+
+        country:
+            parent.country ||
+            degree.country ||
+            "",
+
+
+        university:
+            parent.university ||
+            degree.university ||
+            "",
+
+
+        specialization:
+            degree.specialization ||
+            degree.subject ||
+            parent.specialization ||
+            "All Specializations",
+
+
+        degree:
+            degreeName,
+
+
+        degreeLevel:
+            degree.degreeLevel ||
+            parent.degreeLevel ||
+            getDegreeLevel(
+                degreeName,
+                programName
+            ),
+
+
+        program:
+            programName,
+
+
+        pathwayType:
+            pathwayType,
+
+
+        pathway:
+            pathway,
+
+
+        academicRequirements:
+            academicRequirements,
+
+
+        price:
+            degree.price ||
+            parent.price ||
+            "",
+
+
+        scholarshipSupport:
+            degree.scholarshipSupport ||
+            parent.scholarshipSupport ||
+            "To be confirmed",
+
+
+        languageRequirements:
+            degree.languageRequirements ||
+            parent.languageRequirements ||
+            "",
+
+
+        gpaRequirement:
+            degree.gpaRequirement ||
+            parent.gpaRequirement ||
+            "",
+
+
+        intake:
+            degree.intake ||
+            parent.intake ||
+            "",
+
+
+        degreeEntry:
+            degree.degreeEntry ||
+            parent.degreeEntry ||
+            "",
+
+
+        internshipAvailable:
+            getBooleanValue(
+                degree.internshipAvailable,
+                parent.internshipAvailable
+            ),
+
+
+        englishOptions:
+            englishOptions,
+
+
+        sourceYear:
+            degree.sourceYear ||
+            parent.sourceYear ||
+            "",
+
+
+        source:
+            degree.source ||
+            parent.source ||
+            "",
+
+
+        notes:
+            degree.notes ||
+            parent.notes ||
+            ""
+
+    };
+
+}
+
+
+/* =========================================
+   Academic Requirements
+========================================= */
+
+function normalizeAcademicRequirements(
+    value,
+    fallback
+) {
+
+    if (!value) {
+
+        return {
+            general: fallback || "",
+            countrySpecific: false
+        };
+
+    }
+
+
+    if (typeof value === "string") {
+
+        return {
+            general: value,
+            countrySpecific: false
+        };
+
+    }
+
+
+    return {
+
+        general:
+            value.general ||
+            value.academic ||
+            fallback ||
+            "",
+
+        countrySpecific:
+            Boolean(
+                value.countrySpecific
+            )
+
+    };
+
+}
+
+
+/* =========================================
+   English Options
+========================================= */
+
+function normalizeEnglishOptions(options) {
+
+    if (!Array.isArray(options)) {
+
+        return [];
+
+    }
+
+
+    return options.map((option) => ({
+
+        test:
+            option.test ||
+            "UKVI IELTS",
+
+        overall:
+            option.overall ??
+            "",
+
+        minSkill:
+            option.minSkill ??
+            option.minimumSkill ??
+            "",
+
+        duration:
+            option.duration ||
+            "",
+
+        tuition:
+            option.tuition ??
+            "",
+
+        currency:
+            option.currency ||
+            "GBP",
+
+        start:
+            option.start ||
+            option.startDate ||
+            "",
+
+        end:
+            option.end ||
+            option.endDate ||
+            "",
+
+        degreeEntry:
+            option.degreeEntry ||
+            "",
+
+        internshipAvailable:
+            Boolean(
+                option.internshipAvailable
+            ),
+
+        extraSupport:
+            option.extraSupport ||
+            ""
+
+    }));
+
+}
+
+
+/* =========================================
+   Boolean helper
+========================================= */
+
+function getBooleanValue(
+    first,
+    second
+) {
+
+    if (typeof first === "boolean") {
+        return first;
+    }
+
+    if (typeof second === "boolean") {
+        return second;
+    }
+
+    return false;
+
+}
+
+
+/* =========================================
+   Degree Level
 ========================================= */
 
 function getDegreeLevel(
@@ -290,39 +482,60 @@ function getDegreeLevel(
     programName
 ) {
 
-    const degree = String(
-        degreeName || ""
-    )
-        .trim()
-        .toLowerCase();
+    const degree =
+        normalizeText(degreeName);
+
+    const program =
+        normalizeText(programName);
 
 
-    const program = String(
-        programName || ""
-    )
-        .trim()
-        .toLowerCase();
+    /*
+     * IMPORTANT:
+     * Program type wins first.
+     *
+     * MEng / MSci / MPhys can still be
+     * undergraduate integrated master's.
+     */
+
+    if (
+        program.includes("postgraduate") ||
+        program.includes("pre-master") ||
+        program.includes("pre master")
+    ) {
+
+        return "Master";
+
+    }
 
 
-    const masterPrefixes = [
+    if (
+        program.includes("undergraduate") ||
+        program.includes("foundation") ||
+        program.includes("international year one")
+    ) {
 
-        "msc",
-        "meng",
-        "msci",
-        "mphys",
-        "marts",
-        "mbiol",
-        "mbiochem",
-        "mmath",
-        "menv",
-        "mpharm",
+        return "Bachelor";
+
+    }
+
+
+    const postgraduatePrefixes = [
+
+        "msc ",
+        "msc(",
+        "ma ",
+        "ma(",
+        "mba",
+        "llm",
+        "mph ",
+        "mph(",
         "master"
 
     ];
 
 
     if (
-        masterPrefixes.some(
+        postgraduatePrefixes.some(
             (prefix) =>
                 degree.startsWith(prefix)
         )
@@ -343,7 +556,25 @@ function getDegreeLevel(
         "bmus",
         "bnurs",
         "basc",
-        "bachelor"
+        "barch",
+        "bba",
+        "bachelor",
+
+        /*
+         * Integrated undergraduate awards
+         */
+
+        "meng",
+        "msci",
+        "mphys",
+        "mmath",
+        "mchem",
+        "mbiol",
+        "mbiochem",
+        "mbiomedsci",
+        "menv",
+        "marts",
+        "mpharm"
 
     ];
 
@@ -360,35 +591,53 @@ function getDegreeLevel(
     }
 
 
+    return "";
+
+}
+
+
+/* =========================================
+   Detect pathway type
+========================================= */
+
+function detectPathwayType(programName) {
+
+    const program =
+        normalizeText(programName);
+
+
     if (
         program.includes(
-            "postgraduate"
+            "foundation"
         )
     ) {
 
-        return "Master";
+        return "Foundation";
 
     }
 
 
     if (
         program.includes(
-            "master"
+            "international year one"
         )
     ) {
 
-        return "Master";
+        return "International Year One";
 
     }
 
 
     if (
         program.includes(
-            "undergraduate"
+            "pre-master"
+        ) ||
+        program.includes(
+            "pre master"
         )
     ) {
 
-        return "Bachelor";
+        return "Pre-Master's";
 
     }
 
@@ -399,29 +648,29 @@ function getDegreeLevel(
 
 
 /* =========================================
-   إنشاء الفلاتر
+   Create filters
 ========================================= */
 
 function createFilterOptions() {
-
 
     clearGeneratedOptions(
         specializationFilter
     );
 
-
     clearGeneratedOptions(
         countryFilter
     );
-
 
     clearGeneratedOptions(
         partnershipFilter
     );
 
-
     clearGeneratedOptions(
         universityFilter
+    );
+
+    clearGeneratedOptions(
+        pathwayFilter
     );
 
 
@@ -430,7 +679,8 @@ function createFilterOptions() {
         specializationFilter,
 
         getUniqueValues(
-            "specialization"
+            "specialization",
+            true
         )
 
     );
@@ -468,11 +718,22 @@ function createFilterOptions() {
 
     );
 
+
+    addOptions(
+
+        pathwayFilter,
+
+        getUniqueValues(
+            "pathwayType"
+        )
+
+    );
+
 }
 
 
 /* =========================================
-   حذف الخيارات القديمة
+   Clear generated options
 ========================================= */
 
 function clearGeneratedOptions(
@@ -480,8 +741,7 @@ function clearGeneratedOptions(
 ) {
 
     while (
-        selectElement.options.length >
-        1
+        selectElement.options.length > 1
     ) {
 
         selectElement.remove(1);
@@ -492,13 +752,13 @@ function clearGeneratedOptions(
 
 
 /* =========================================
-   القيم الفريدة
+   Unique Values
 ========================================= */
 
 function getUniqueValues(
-    propertyName
+    propertyName,
+    removeAllSpecializations = false
 ) {
-
 
     return [
 
@@ -513,21 +773,35 @@ function getUniqueValues(
 
                 .filter(Boolean)
 
+                .filter((value) => {
+
+                    if (
+                        removeAllSpecializations &&
+                        value === "All Specializations"
+                    ) {
+
+                        return false;
+
+                    }
+
+                    return true;
+
+                })
+
         )
 
     ].sort(
 
         (a, b) =>
 
-            a.localeCompare(
+            String(a).localeCompare(
 
-                b,
+                String(b),
 
                 undefined,
 
                 {
-                    sensitivity:
-                        "base"
+                    sensitivity: "base"
                 }
 
             )
@@ -538,7 +812,7 @@ function getUniqueValues(
 
 
 /* =========================================
-   إضافة الخيارات
+   Add select options
 ========================================= */
 
 function addOptions(
@@ -546,44 +820,39 @@ function addOptions(
     values
 ) {
 
+    values.forEach((value) => {
 
-    values.forEach(
-        (value) => {
-
-
-            const option =
-                document.createElement(
-                    "option"
-                );
-
-
-            option.value =
-                value;
-
-
-            option.textContent =
-                value;
-
-
-            selectElement.appendChild(
-                option
+        const option =
+            document.createElement(
+                "option"
             );
 
-        }
-    );
+
+        option.value =
+            value;
+
+
+        option.textContent =
+            value;
+
+
+        selectElement.appendChild(
+            option
+        );
+
+    });
 
 }
 
 
 /* =========================================
-   البحث والفلاتر
+   Filter
 ========================================= */
 
 function filterPrograms() {
 
-
     const searchValue =
-        normalizeText(
+        normalizeSearchText(
             searchInput.value
         );
 
@@ -608,114 +877,165 @@ function filterPrograms() {
         universityFilter.value;
 
 
+    const selectedPathway =
+        pathwayFilter.value;
+
+
     const selectedScholarship =
         scholarshipFilter.value;
 
 
     const filteredPrograms =
-        programs.filter(
-            (item) => {
+        programs.filter((item) => {
+
+            const optionsText =
+                item.englishOptions
+                    .map((option) => `
+
+                        ${option.test}
+
+                        ${option.overall}
+
+                        ${option.minSkill}
+
+                        ${option.duration}
+
+                        ${option.tuition}
+
+                        ${option.start}
+
+                        ${option.end}
+
+                        ${option.degreeEntry}
+
+                    `)
+                    .join(" ");
 
 
-                const searchableContent =
-                    normalizeText(`
+            const searchableContent =
+                normalizeSearchText(`
 
-                        ${item.specialization || ""}
+                    ${item.specialization || ""}
 
-                        ${item.degree || ""}
+                    ${item.degree || ""}
 
-                        ${item.degreeLevel || ""}
+                    ${item.degreeLevel || ""}
 
-                        ${item.partnership || ""}
+                    ${item.partnership || ""}
 
-                        ${item.country || ""}
+                    ${item.country || ""}
 
-                        ${item.university || ""}
+                    ${item.university || ""}
 
-                        ${item.program || ""}
+                    ${item.program || ""}
 
-                        ${item.notes || ""}
+                    ${item.pathwayType || ""}
 
-                    `);
+                    ${item.pathway || ""}
 
+                    ${item.academicRequirements.general || ""}
 
-                const matchesSearch =
+                    ${item.languageRequirements || ""}
 
-                    searchValue === "" ||
+                    ${item.gpaRequirement || ""}
 
-                    searchableContent.includes(
-                        searchValue
-                    );
+                    ${item.intake || ""}
 
+                    ${item.degreeEntry || ""}
 
-                const matchesSpecialization =
+                    ${item.notes || ""}
 
-                    selectedSpecialization === "" ||
+                    ${optionsText}
 
-                    item.specialization ===
-                        selectedSpecialization;
-
-
-                const matchesDegreeLevel =
-
-                    selectedDegreeLevel === "" ||
-
-                    item.degreeLevel ===
-                        selectedDegreeLevel;
+                `);
 
 
-                const matchesCountry =
+            const matchesSearch =
 
-                    selectedCountry === "" ||
+                searchValue === "" ||
 
-                    item.country ===
-                        selectedCountry;
-
-
-                const matchesPartnership =
-
-                    selectedPartnership === "" ||
-
-                    item.partnership ===
-                        selectedPartnership;
-
-
-                const matchesUniversity =
-
-                    selectedUniversity === "" ||
-
-                    item.university ===
-                        selectedUniversity;
-
-
-                const matchesScholarship =
-
-                    selectedScholarship === "" ||
-
-                    item.scholarshipSupport ===
-                        selectedScholarship;
-
-
-                return (
-
-                    matchesSearch &&
-
-                    matchesSpecialization &&
-
-                    matchesDegreeLevel &&
-
-                    matchesCountry &&
-
-                    matchesPartnership &&
-
-                    matchesUniversity &&
-
-                    matchesScholarship
-
+                searchableContent.includes(
+                    searchValue
                 );
 
-            }
-        );
+
+            const matchesSpecialization =
+
+                selectedSpecialization === "" ||
+
+                item.specialization ===
+                    selectedSpecialization;
+
+
+            const matchesDegreeLevel =
+
+                selectedDegreeLevel === "" ||
+
+                item.degreeLevel ===
+                    selectedDegreeLevel;
+
+
+            const matchesCountry =
+
+                selectedCountry === "" ||
+
+                item.country ===
+                    selectedCountry;
+
+
+            const matchesPartnership =
+
+                selectedPartnership === "" ||
+
+                item.partnership ===
+                    selectedPartnership;
+
+
+            const matchesUniversity =
+
+                selectedUniversity === "" ||
+
+                item.university ===
+                    selectedUniversity;
+
+
+            const matchesPathway =
+
+                selectedPathway === "" ||
+
+                item.pathwayType ===
+                    selectedPathway;
+
+
+            const matchesScholarship =
+
+                selectedScholarship === "" ||
+
+                item.scholarshipSupport ===
+                    selectedScholarship;
+
+
+            return (
+
+                matchesSearch &&
+
+                matchesSpecialization &&
+
+                matchesDegreeLevel &&
+
+                matchesCountry &&
+
+                matchesPartnership &&
+
+                matchesUniversity &&
+
+                matchesPathway &&
+
+                matchesScholarship
+
+            );
+
+        });
 
 
     displayPrograms(
@@ -726,13 +1046,10 @@ function filterPrograms() {
 
 
 /* =========================================
-   عرض النتائج
+   Display Programs
 ========================================= */
 
-function displayPrograms(
-    data
-) {
-
+function displayPrograms(data) {
 
     cardsContainer.innerHTML =
         "";
@@ -742,18 +1059,13 @@ function displayPrograms(
         data.length;
 
 
-    if (
-        data.length === 0
-    ) {
-
+    if (data.length === 0) {
 
         emptyState.style.display =
             "block";
 
-
         errorState.style.display =
             "none";
-
 
         return;
 
@@ -763,253 +1075,747 @@ function displayPrograms(
     emptyState.style.display =
         "none";
 
-
     errorState.style.display =
         "none";
 
 
-    data.forEach(
-        (item) => {
+    data.forEach((item) => {
+
+        const card =
+            document.createElement(
+                "article"
+            );
 
 
-            const card =
-                document.createElement(
-                    "article"
-                );
+        card.className =
+            "result-card";
 
 
-            card.className =
-                "result-card";
+        card.innerHTML = `
 
+            <div class="card-header">
 
-            card.innerHTML = `
+                <div>
 
-                <div class="card-header">
-
-                    <div>
-
-                        <h2>
-                            ${escapeHTML(
-                                item.specialization
-                            )}
-                        </h2>
-
-                        <p>
-                            ${escapeHTML(
-                                item.partnership
-                            )}
-                        </p>
-
-                    </div>
-
-
-                    <span class="country-badge">
-
+                    <h2>
                         ${escapeHTML(
-                            item.country
+                            item.specialization
                         )}
+                    </h2>
 
-                    </span>
+                    <p>
+                        ${escapeHTML(
+                            item.partnership
+                        )}
+                    </p>
+
+                    ${
+                        hasValue(
+                            item.university
+                        )
+                            ? `
+                                <p class="card-university">
+                                    ${escapeHTML(
+                                        item.university
+                                    )}
+                                </p>
+                            `
+                            : ""
+                    }
 
                 </div>
 
 
-                <div class="card-body">
+                <span class="country-badge">
 
-                    <div class="data-grid">
+                    ${escapeHTML(
+                        item.country
+                    )}
 
+                </span>
 
-                        <div class="data-item">
-
-                            <span>
-                                الجامعة
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.university
-                                )}
-                            </strong>
-
-                        </div>
+            </div>
 
 
-                        <div class="data-item">
-
-                            <span>
-                                الدرجة الدراسية
-                            </span>
-
-                            <strong>
-                                ${getDegreeLevelLabel(
-                                    item.degreeLevel
-                                )}
-                            </strong>
-
-                        </div>
+            <div class="card-body">
 
 
-                        <div class="data-item">
+                ${
+                    hasValue(item.degree)
+                        ? `
 
-                            <span>
-                                الدرجة / البرنامج
-                            </span>
+                            <div class="degree-title-box">
 
-                            <strong>
-                                ${escapeHTML(
-                                    item.degree
-                                )}
-                            </strong>
+                                <span>
+                                    الدرجة الجامعية
+                                </span>
 
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                المرحلة / المسار
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.program
-                                )}
-                            </strong>
-
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                الرسوم الدراسية
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.price
-                                )}
-                            </strong>
-
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                دعم الابتعاث
-                            </span>
-
-
-                            <strong
-                                class="
-                                    scholarship-badge
-
-                                    ${getScholarshipClass(
-                                        item.scholarshipSupport
+                                <strong>
+                                    ${escapeHTML(
+                                        item.degree
                                     )}
-                                "
-                            >
+                                </strong>
 
-                                ${getScholarshipLabel(
+                            </div>
+
+                        `
+                        : ""
+                }
+
+
+                <div class="data-grid">
+
+
+                    <div class="data-item">
+
+                        <span>
+                            الدرجة الدراسية
+                        </span>
+
+                        <strong
+                            class="level-badge"
+                        >
+
+                            ${getDegreeLevelLabel(
+                                item.degreeLevel
+                            )}
+
+                        </strong>
+
+                    </div>
+
+
+                    ${
+                        hasValue(item.pathwayType)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        نوع المسار
+                                    </span>
+
+                                    <strong
+                                        class="pathway-badge"
+                                    >
+
+                                        ${escapeHTML(
+                                            item.pathwayType
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.pathway)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        مسار Kaplan
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.pathway
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.program)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        البرنامج / المرحلة
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.program
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(
+                            item.academicRequirements.general
+                        )
+                            ? `
+
+                                <div class="data-item full-width">
+
+                                    <span>
+                                        المتطلبات الأكاديمية
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.academicRequirements.general
+                                        )}
+
+                                        ${
+                                            item.academicRequirements.countrySpecific
+                                                ? `
+                                                    <br>
+                                                    <small>
+                                                        تختلف التفاصيل حسب دولة الطالب.
+                                                    </small>
+                                                `
+                                                : ""
+                                        }
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        item.englishOptions.length === 0 &&
+                        hasValue(item.languageRequirements)
+
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        متطلبات اللغة
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.languageRequirements
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.gpaRequirement) &&
+                        !hasValue(
+                            item.academicRequirements.general
+                        )
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        المعدل المطلوب
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.gpaRequirement
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        item.englishOptions.length === 0 &&
+                        hasValue(item.price)
+
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        الرسوم الدراسية
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.price
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.intake)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        موعد الدراسة
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.intake
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.degreeEntry)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        دخول الجامعة
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.degreeEntry
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    <div class="data-item">
+
+                        <span>
+                            دعم الابتعاث
+                        </span>
+
+                        <strong
+                            class="
+                                scholarship-badge
+                                ${getScholarshipClass(
                                     item.scholarshipSupport
                                 )}
-
-                            </strong>
-
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                متطلبات اللغة
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.languageRequirements
-                                )}
-                            </strong>
-
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                المعدل المطلوب
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.gpaRequirement
-                                )}
-                            </strong>
-
-                        </div>
-
-
-                        <div class="data-item">
-
-                            <span>
-                                موعد الدراسة
-                            </span>
-
-                            <strong>
-                                ${escapeHTML(
-                                    item.intake
-                                )}
-                            </strong>
-
-                        </div>
-
-
-                        <div
-                            class="
-                                data-item
-                                full-width
                             "
                         >
 
-                            <span>
-                                ملاحظات
-                            </span>
+                            ${getScholarshipLabel(
+                                item.scholarshipSupport
+                            )}
 
-                            <strong>
-                                ${escapeHTML(
-                                    item.notes
-                                )}
-                            </strong>
-
-                        </div>
-
+                        </strong>
 
                     </div>
 
+
+                    ${
+                        item.internshipAvailable
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        Internship
+                                    </span>
+
+                                    <strong>
+                                        متاح
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
+                    ${
+                        hasValue(item.sourceYear)
+                            ? `
+
+                                <div class="data-item">
+
+                                    <span>
+                                        سنة البيانات
+                                    </span>
+
+                                    <strong>
+
+                                        ${escapeHTML(
+                                            item.sourceYear
+                                        )}
+
+                                    </strong>
+
+                                </div>
+
+                            `
+                            : ""
+                    }
+
+
                 </div>
 
-            `;
+
+                ${createEnglishOptionsTable(
+                    item.englishOptions
+                )}
 
 
-            cardsContainer.appendChild(
-                card
-            );
+                ${
+                    hasValue(item.notes)
+                        ? `
 
-        }
-    );
+                            <div class="notes-box">
+
+                                <span>
+                                    ملاحظات
+                                </span>
+
+                                <strong>
+
+                                    ${escapeHTML(
+                                        item.notes
+                                    )}
+
+                                </strong>
+
+                            </div>
+
+                        `
+                        : ""
+                }
+
+
+            </div>
+
+        `;
+
+
+        cardsContainer.appendChild(
+            card
+        );
+
+    });
 
 }
 
 
 /* =========================================
-   اسم الدرجة بالعربي
+   English Options Table
 ========================================= */
 
-function getDegreeLevelLabel(
-    level
+function createEnglishOptionsTable(
+    options
 ) {
 
+    if (
+        !Array.isArray(options) ||
+        options.length === 0
+    ) {
+
+        return "";
+
+    }
+
+
+    const rows =
+        options.map((option) => `
+
+            <tr>
+
+                <td>
+
+                    ${formatIELTS(option)}
+
+                </td>
+
+
+                <td>
+
+                    ${escapeHTML(
+                        option.duration ||
+                        "-"
+                    )}
+
+                </td>
+
+
+                <td>
+
+                    ${formatTuition(
+                        option.tuition,
+                        option.currency
+                    )}
+
+                </td>
+
+
+                <td>
+
+                    ${escapeHTML(
+                        option.start ||
+                        "-"
+                    )}
+
+                </td>
+
+
+                <td>
+
+                    ${escapeHTML(
+                        option.end ||
+                        "-"
+                    )}
+
+                </td>
+
+
+                <td>
+
+                    ${escapeHTML(
+                        option.degreeEntry ||
+                        "-"
+                    )}
+
+                </td>
+
+            </tr>
+
+        `).join("");
+
+
+    return `
+
+        <div class="options-section">
+
+            <h3>
+                خيارات القبول والمسار
+            </h3>
+
+
+            <div class="options-table-wrapper">
+
+                <table class="options-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                IELTS
+                            </th>
+
+                            <th>
+                                المدة
+                            </th>
+
+                            <th>
+                                الرسوم
+                            </th>
+
+                            <th>
+                                البداية
+                            </th>
+
+                            <th>
+                                النهاية
+                            </th>
+
+                            <th>
+                                دخول الجامعة
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        ${rows}
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    `;
+
+}
+
+
+/* =========================================
+   IELTS formatting
+========================================= */
+
+function formatIELTS(option) {
+
+    if (
+        option.overall === "" &&
+        option.minSkill === ""
+    ) {
+
+        return "-";
+
+    }
+
+
+    let text = "";
+
+
+    if (
+        option.overall !== ""
+    ) {
+
+        text += `${escapeHTML(
+            option.overall
+        )} overall`;
+
+    }
+
+
+    if (
+        option.minSkill !== ""
+    ) {
+
+        text += ` / no skill below ${escapeHTML(
+            option.minSkill
+        )}`;
+
+    }
+
+
+    return text;
+
+}
+
+
+/* =========================================
+   Tuition formatting
+========================================= */
+
+function formatTuition(
+    tuition,
+    currency
+) {
+
+    if (
+        tuition === "" ||
+        tuition === null ||
+        tuition === undefined
+    ) {
+
+        return "-";
+
+    }
+
+
+    if (
+        typeof tuition === "number"
+    ) {
+
+        const formatted =
+            new Intl.NumberFormat(
+                "en-GB"
+            ).format(tuition);
+
+
+        if (
+            currency === "GBP"
+        ) {
+
+            return `£${formatted}`;
+
+        }
+
+
+        if (
+            currency === "USD"
+        ) {
+
+            return `$${formatted}`;
+
+        }
+
+
+        if (
+            currency === "EUR"
+        ) {
+
+            return `€${formatted}`;
+
+        }
+
+
+        return `${formatted} ${escapeHTML(
+            currency || ""
+        )}`;
+
+    }
+
+
+    return escapeHTML(tuition);
+
+}
+
+
+/* =========================================
+   Degree Level Label
+========================================= */
+
+function getDegreeLevelLabel(level) {
 
     if (
         level === "Bachelor"
@@ -1038,10 +1844,7 @@ function getDegreeLevelLabel(
    Scholarship
 ========================================= */
 
-function getScholarshipClass(
-    status
-) {
-
+function getScholarshipClass(status) {
 
     if (
         status === "Supported"
@@ -1053,8 +1856,7 @@ function getScholarshipClass(
 
 
     if (
-        status ===
-        "Not Supported"
+        status === "Not Supported"
     ) {
 
         return "not-supported";
@@ -1067,10 +1869,7 @@ function getScholarshipClass(
 }
 
 
-function getScholarshipLabel(
-    status
-) {
-
+function getScholarshipLabel(status) {
 
     if (
         status === "Supported"
@@ -1082,8 +1881,7 @@ function getScholarshipLabel(
 
 
     if (
-        status ===
-        "Not Supported"
+        status === "Not Supported"
     ) {
 
         return "غير مدعوم";
@@ -1100,10 +1898,23 @@ function getScholarshipLabel(
    Helpers
 ========================================= */
 
-function normalizeText(
-    value
-) {
+function normalizeText(value) {
 
+    return String(
+        value || ""
+    )
+        .toLowerCase()
+        .trim();
+
+}
+
+
+/*
+ * Search normalization
+ * Handles common Arabic characters too.
+ */
+
+function normalizeSearchText(value) {
 
     return String(
         value || ""
@@ -1111,15 +1922,20 @@ function normalizeText(
 
         .toLowerCase()
 
+        .replace(/[أإآ]/g, "ا")
+
+        .replace(/ة/g, "ه")
+
+        .replace(/ى/g, "ي")
+
+        .replace(/\s+/g, " ")
+
         .trim();
 
 }
 
 
-function escapeHTML(
-    value
-) {
-
+function escapeHTML(value) {
 
     const div =
         document.createElement(
@@ -1128,13 +1944,69 @@ function escapeHTML(
 
 
     div.textContent =
+        value === null ||
+        value === undefined ||
+        value === ""
 
-        value ||
+            ? "-"
 
-        "سيتم إضافته";
+            : String(value);
 
 
     return div.innerHTML;
+
+}
+
+
+function hasValue(value) {
+
+    if (
+        value === null ||
+        value === undefined
+    ) {
+
+        return false;
+
+    }
+
+
+    const text =
+        String(value)
+            .trim();
+
+
+    if (
+        text === ""
+    ) {
+
+        return false;
+
+    }
+
+
+    /*
+     * Hide old placeholders
+     */
+
+    const placeholders = [
+
+        "سيتم إضافته",
+        "سيتم اضافه",
+        "سيتم إضافة السعر",
+        "سيتم إضافة المعدل",
+        "سيتم إضافة متطلبات اللغة",
+        "to be added"
+
+    ];
+
+
+    return !placeholders
+        .map(
+            normalizeSearchText
+        )
+        .includes(
+            normalizeSearchText(text)
+        );
 
 }
 
@@ -1145,30 +2017,26 @@ function escapeHTML(
 
 function resetFilters() {
 
-
     searchInput.value =
         "";
-
 
     specializationFilter.value =
         "";
 
-
     degreeLevelFilter.value =
         "";
-
 
     countryFilter.value =
         "";
 
-
     partnershipFilter.value =
         "";
-
 
     universityFilter.value =
         "";
 
+    pathwayFilter.value =
+        "";
 
     scholarshipFilter.value =
         "";
@@ -1217,6 +2085,12 @@ partnershipFilter.addEventListener(
 
 
 universityFilter.addEventListener(
+    "change",
+    filterPrograms
+);
+
+
+pathwayFilter.addEventListener(
     "change",
     filterPrograms
 );
