@@ -40,10 +40,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Minimum skill scores and lower-entry English options vary by pathway and course length.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "partnership": "Kaplan",
@@ -519,10 +519,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Minimum component requirement is normally 4.5-5.0 depending on the pathway; lower IELTS may be accepted with a longer course.",
+    "gpaRequirement": "Completed high school at the required level for undergraduate pathways. Exact requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "partnership": "Kaplan",
@@ -1276,10 +1276,10 @@
     "university": "University of Birmingham",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "To be confirmed",
+    "gpaRequirement": "To be confirmed",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Degree Finder",
+    "notes": "University of Birmingham foundation pathways - 2026/27 course information is marked Coming soon.",
     "degrees": [
       {
         "specialization": "Accounting and Finance",
@@ -2256,10 +2256,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Minimum skill scores and lower-entry English options vary by pathway and course length.",
+    "gpaRequirement": "Completed high school at the required level for undergraduate pathways. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "partnership": "Kaplan",
@@ -2267,10 +2267,10 @@
     "university": "University of Bristol",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "English language requirement varies by International Foundation Programme route and study plan. UKVI IELTS is accepted; exact overall and component scores should be checked for the chosen progression degree.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen progression degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Degree Finder",
+    "notes": "University of Bristol International Foundation Programme - 2026/27. Some progression degrees may have additional requirements.",
     "degrees": [
       {
         "specialization": "Accounting and Finance",
@@ -3257,10 +3257,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Foundation pathways commonly require no less than 4.5 in any skill, while International Year One routes commonly require no less than 5.0; lower IELTS may be accepted with a longer course.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "specialization": "All Specializations",
@@ -3270,10 +3270,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Minimum skill scores and lower-entry English options vary by pathway and course length.",
+    "gpaRequirement": "Completed high school at the required level for undergraduate pathways. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "Glasgow International College - Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "partnership": "Kaplan",
@@ -3281,10 +3281,10 @@
     "university": "University of Liverpool",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Undergraduate Foundation routes commonly require no less than 4.5 in any skill; lower IELTS may be accepted with a longer pathway.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University",
+    "notes": "University of Liverpool International College - Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements.",
     "degrees": [
       {
         "specialization": "Law",
@@ -3304,10 +3304,10 @@
     "university": "University of Nottingham",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall for undergraduate pathway entry. Minimum skill scores and lower-entry English options vary by course length and pathway.",
+    "gpaRequirement": "Completed high school at the required level for undergraduate pathways. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University",
+    "notes": "University of Nottingham International College - Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements.",
     "degrees": [
       {
         "specialization": "Business and Management",
@@ -3845,10 +3845,10 @@
     "university": "University of York",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Foundation routes commonly require no less than 4.5 in any skill; some International Year One routes may require no less than 5.0. Lower IELTS may be accepted with a longer pathway.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Degree Finder",
+    "notes": "University of York International Pathway College - Kaplan International Pathways - 2026/27. Some degrees, including Nursing, may have higher English requirements.",
     "degrees": [
       {
         "specialization": "Accounting, Business Finance and Management",
@@ -4460,10 +4460,10 @@
     "program": "To be added",
     "price": "سيتم إضافة السعر",
     "scholarshipSupport": "To be confirmed",
-    "languageRequirements": "سيتم إضافة متطلبات اللغة",
-    "gpaRequirement": "سيتم إضافة المعدل",
+    "languageRequirements": "UKVI IELTS typically 5.5 overall. Minimum skill scores and lower-entry English options vary by Foundation or International Year One route and course length.",
+    "gpaRequirement": "Completed high school at the required level. Exact academic requirements depend on the student's country and chosen degree.",
     "intake": "سيتم إضافته",
-    "notes": "Kaplan Partner University"
+    "notes": "UWE Bristol's International College - Kaplan International Pathways - 2026/27. Some progression degrees may have additional requirements."
   },
   {
     "specialization": "All Specializations",
