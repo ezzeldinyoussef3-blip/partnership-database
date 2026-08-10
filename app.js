@@ -1,7 +1,3 @@
-/* =========================================
-   Elements
-========================================= */
-
 const searchInput =
     document.getElementById("searchInput");
 
@@ -19,9 +15,6 @@ const partnershipFilter =
 
 const universityFilter =
     document.getElementById("universityFilter");
-
-const pathwayFilter =
-    document.getElementById("pathwayFilter");
 
 const scholarshipFilter =
     document.getElementById("scholarshipFilter");
@@ -56,7 +49,7 @@ fetch("./partnerships.json")
         if (!response.ok) {
 
             throw new Error(
-                `Failed to load partnerships.json: ${response.status}`
+                `Failed to load data: ${response.status}`
             );
 
         }
@@ -115,11 +108,6 @@ function normalizeData(data) {
 
     data.forEach((item) => {
 
-        /*
-         * New / nested format:
-         * university object containing degrees[]
-         */
-
         if (Array.isArray(item.degrees)) {
 
             item.degrees.forEach((degree) => {
@@ -133,21 +121,16 @@ function normalizeData(data) {
 
             });
 
-            return;
+        } else {
+
+            normalizedPrograms.push(
+                createNormalizedProgram(
+                    item,
+                    item
+                )
+            );
 
         }
-
-
-        /*
-         * Old flat format
-         */
-
-        normalizedPrograms.push(
-            createNormalizedProgram(
-                item,
-                item
-            )
-        );
 
     });
 
@@ -158,7 +141,7 @@ function normalizeData(data) {
 
 
 /* =========================================
-   Build normalized record
+   Create normalized program
 ========================================= */
 
 function createNormalizedProgram(
@@ -180,35 +163,24 @@ function createNormalizedProgram(
         "";
 
 
-    const pathwayType =
-        degree.pathwayType ||
-        parent.pathwayType ||
-        detectPathwayType(programName) ||
+    const languageRequirements =
+        degree.languageRequirements ||
+        parent.languageRequirements ||
+        getLanguageFromOptions(
+            degree.englishOptions ||
+            parent.englishOptions
+        ) ||
         "";
 
 
-    const pathway =
-        degree.pathway ||
-        parent.pathway ||
-        "";
-
-
-    const englishOptions = normalizeEnglishOptions(
-        degree.englishOptions ||
-        parent.englishOptions ||
-        []
-    );
-
-
-    const academicRequirements =
-        normalizeAcademicRequirements(
+    const gpaRequirement =
+        degree.gpaRequirement ||
+        parent.gpaRequirement ||
+        getAcademicRequirement(
             degree.academicRequirements ||
-            parent.academicRequirements ||
-            null,
-            degree.gpaRequirement ||
-            parent.gpaRequirement ||
-            ""
-        );
+            parent.academicRequirements
+        ) ||
+        "";
 
 
     return {
@@ -255,21 +227,13 @@ function createNormalizedProgram(
             programName,
 
 
-        pathwayType:
-            pathwayType,
-
-
-        pathway:
-            pathway,
-
-
-        academicRequirements:
-            academicRequirements,
-
-
         price:
             degree.price ||
             parent.price ||
+            getPriceFromOptions(
+                degree.englishOptions ||
+                parent.englishOptions
+            ) ||
             "",
 
 
@@ -280,49 +244,20 @@ function createNormalizedProgram(
 
 
         languageRequirements:
-            degree.languageRequirements ||
-            parent.languageRequirements ||
-            "",
+            languageRequirements,
 
 
         gpaRequirement:
-            degree.gpaRequirement ||
-            parent.gpaRequirement ||
-            "",
+            gpaRequirement,
 
 
         intake:
             degree.intake ||
             parent.intake ||
-            "",
-
-
-        degreeEntry:
-            degree.degreeEntry ||
-            parent.degreeEntry ||
-            "",
-
-
-        internshipAvailable:
-            getBooleanValue(
-                degree.internshipAvailable,
-                parent.internshipAvailable
-            ),
-
-
-        englishOptions:
-            englishOptions,
-
-
-        sourceYear:
-            degree.sourceYear ||
-            parent.sourceYear ||
-            "",
-
-
-        source:
-            degree.source ||
-            parent.source ||
+            getIntakeFromOptions(
+                degree.englishOptions ||
+                parent.englishOptions
+            ) ||
             "",
 
 
@@ -337,138 +272,147 @@ function createNormalizedProgram(
 
 
 /* =========================================
-   Academic Requirements
+   Helpers for new data
 ========================================= */
 
-function normalizeAcademicRequirements(
-    value,
-    fallback
-) {
+function getLanguageFromOptions(options) {
+
+    if (
+        !Array.isArray(options) ||
+        options.length === 0
+    ) {
+
+        return "";
+
+    }
+
+
+    const first =
+        options[0];
+
+
+    let result = "";
+
+
+    if (
+        first.test
+    ) {
+
+        result += first.test;
+
+    }
+
+
+    if (
+        first.overall !== undefined &&
+        first.overall !== ""
+    ) {
+
+        result +=
+            ` ${first.overall} overall`;
+
+    }
+
+
+    const minSkill =
+        first.minSkill ??
+        first.minimumSkill;
+
+
+    if (
+        minSkill !== undefined &&
+        minSkill !== ""
+    ) {
+
+        result +=
+            `, no skill below ${minSkill}`;
+
+    }
+
+
+    return result.trim();
+
+}
+
+
+function getAcademicRequirement(value) {
 
     if (!value) {
 
-        return {
-            general: fallback || "",
-            countrySpecific: false
-        };
+        return "";
 
     }
 
 
-    if (typeof value === "string") {
+    if (
+        typeof value === "string"
+    ) {
 
-        return {
-            general: value,
-            countrySpecific: false
-        };
+        return value;
 
     }
 
 
-    return {
-
-        general:
-            value.general ||
-            value.academic ||
-            fallback ||
-            "",
-
-        countrySpecific:
-            Boolean(
-                value.countrySpecific
-            )
-
-    };
+    return (
+        value.general ||
+        value.academic ||
+        ""
+    );
 
 }
 
 
-/* =========================================
-   English Options
-========================================= */
+function getPriceFromOptions(options) {
 
-function normalizeEnglishOptions(options) {
+    if (
+        !Array.isArray(options) ||
+        options.length === 0
+    ) {
 
-    if (!Array.isArray(options)) {
-
-        return [];
+        return "";
 
     }
 
 
-    return options.map((option) => ({
+    const first =
+        options[0];
 
-        test:
-            option.test ||
-            "UKVI IELTS",
 
-        overall:
-            option.overall ??
-            "",
+    if (
+        first.tuition === undefined ||
+        first.tuition === ""
+    ) {
 
-        minSkill:
-            option.minSkill ??
-            option.minimumSkill ??
-            "",
+        return "";
 
-        duration:
-            option.duration ||
-            "",
+    }
 
-        tuition:
-            option.tuition ??
-            "",
 
-        currency:
-            option.currency ||
-            "GBP",
-
-        start:
-            option.start ||
-            option.startDate ||
-            "",
-
-        end:
-            option.end ||
-            option.endDate ||
-            "",
-
-        degreeEntry:
-            option.degreeEntry ||
-            "",
-
-        internshipAvailable:
-            Boolean(
-                option.internshipAvailable
-            ),
-
-        extraSupport:
-            option.extraSupport ||
-            ""
-
-    }));
+    return formatPrice(
+        first.tuition,
+        first.currency || "GBP"
+    );
 
 }
 
 
-/* =========================================
-   Boolean helper
-========================================= */
+function getIntakeFromOptions(options) {
 
-function getBooleanValue(
-    first,
-    second
-) {
+    if (
+        !Array.isArray(options) ||
+        options.length === 0
+    ) {
 
-    if (typeof first === "boolean") {
-        return first;
+        return "";
+
     }
 
-    if (typeof second === "boolean") {
-        return second;
-    }
 
-    return false;
+    return (
+        options[0].start ||
+        options[0].startDate ||
+        ""
+    );
 
 }
 
@@ -488,14 +432,6 @@ function getDegreeLevel(
     const program =
         normalizeText(programName);
 
-
-    /*
-     * IMPORTANT:
-     * Program type wins first.
-     *
-     * MEng / MSci / MPhys can still be
-     * undergraduate integrated master's.
-     */
 
     if (
         program.includes("postgraduate") ||
@@ -519,7 +455,7 @@ function getDegreeLevel(
     }
 
 
-    const postgraduatePrefixes = [
+    const masterPrefixes = [
 
         "msc ",
         "msc(",
@@ -527,15 +463,13 @@ function getDegreeLevel(
         "ma(",
         "mba",
         "llm",
-        "mph ",
-        "mph(",
         "master"
 
     ];
 
 
     if (
-        postgraduatePrefixes.some(
+        masterPrefixes.some(
             (prefix) =>
                 degree.startsWith(prefix)
         )
@@ -558,12 +492,6 @@ function getDegreeLevel(
         "basc",
         "barch",
         "bba",
-        "bachelor",
-
-        /*
-         * Integrated undergraduate awards
-         */
-
         "meng",
         "msci",
         "mphys",
@@ -574,7 +502,8 @@ function getDegreeLevel(
         "mbiomedsci",
         "menv",
         "marts",
-        "mpharm"
+        "mpharm",
+        "bachelor"
 
     ];
 
@@ -597,58 +526,7 @@ function getDegreeLevel(
 
 
 /* =========================================
-   Detect pathway type
-========================================= */
-
-function detectPathwayType(programName) {
-
-    const program =
-        normalizeText(programName);
-
-
-    if (
-        program.includes(
-            "foundation"
-        )
-    ) {
-
-        return "Foundation";
-
-    }
-
-
-    if (
-        program.includes(
-            "international year one"
-        )
-    ) {
-
-        return "International Year One";
-
-    }
-
-
-    if (
-        program.includes(
-            "pre-master"
-        ) ||
-        program.includes(
-            "pre master"
-        )
-    ) {
-
-        return "Pre-Master's";
-
-    }
-
-
-    return "";
-
-}
-
-
-/* =========================================
-   Create filters
+   Filters
 ========================================= */
 
 function createFilterOptions() {
@@ -667,10 +545,6 @@ function createFilterOptions() {
 
     clearGeneratedOptions(
         universityFilter
-    );
-
-    clearGeneratedOptions(
-        pathwayFilter
     );
 
 
@@ -718,23 +592,8 @@ function createFilterOptions() {
 
     );
 
-
-    addOptions(
-
-        pathwayFilter,
-
-        getUniqueValues(
-            "pathwayType"
-        )
-
-    );
-
 }
 
-
-/* =========================================
-   Clear generated options
-========================================= */
 
 function clearGeneratedOptions(
     selectElement
@@ -750,10 +609,6 @@ function clearGeneratedOptions(
 
 }
 
-
-/* =========================================
-   Unique Values
-========================================= */
 
 function getUniqueValues(
     propertyName,
@@ -811,10 +666,6 @@ function getUniqueValues(
 }
 
 
-/* =========================================
-   Add select options
-========================================= */
-
 function addOptions(
     selectElement,
     values
@@ -846,7 +697,7 @@ function addOptions(
 
 
 /* =========================================
-   Filter
+   Search and filter
 ========================================= */
 
 function filterPrograms() {
@@ -877,39 +728,12 @@ function filterPrograms() {
         universityFilter.value;
 
 
-    const selectedPathway =
-        pathwayFilter.value;
-
-
     const selectedScholarship =
         scholarshipFilter.value;
 
 
     const filteredPrograms =
         programs.filter((item) => {
-
-            const optionsText =
-                item.englishOptions
-                    .map((option) => `
-
-                        ${option.test}
-
-                        ${option.overall}
-
-                        ${option.minSkill}
-
-                        ${option.duration}
-
-                        ${option.tuition}
-
-                        ${option.start}
-
-                        ${option.end}
-
-                        ${option.degreeEntry}
-
-                    `)
-                    .join(" ");
 
 
             const searchableContent =
@@ -929,23 +753,13 @@ function filterPrograms() {
 
                     ${item.program || ""}
 
-                    ${item.pathwayType || ""}
-
-                    ${item.pathway || ""}
-
-                    ${item.academicRequirements.general || ""}
-
                     ${item.languageRequirements || ""}
 
                     ${item.gpaRequirement || ""}
 
                     ${item.intake || ""}
 
-                    ${item.degreeEntry || ""}
-
                     ${item.notes || ""}
-
-                    ${optionsText}
 
                 `);
 
@@ -999,14 +813,6 @@ function filterPrograms() {
                     selectedUniversity;
 
 
-            const matchesPathway =
-
-                selectedPathway === "" ||
-
-                item.pathwayType ===
-                    selectedPathway;
-
-
             const matchesScholarship =
 
                 selectedScholarship === "" ||
@@ -1029,8 +835,6 @@ function filterPrograms() {
 
                 matchesUniversity &&
 
-                matchesPathway &&
-
                 matchesScholarship
 
             );
@@ -1046,7 +850,7 @@ function filterPrograms() {
 
 
 /* =========================================
-   Display Programs
+   Display
 ========================================= */
 
 function displayPrograms(data) {
@@ -1059,7 +863,9 @@ function displayPrograms(data) {
         data.length;
 
 
-    if (data.length === 0) {
+    if (
+        data.length === 0
+    ) {
 
         emptyState.style.display =
             "block";
@@ -1110,9 +916,7 @@ function displayPrograms(data) {
                     </p>
 
                     ${
-                        hasValue(
-                            item.university
-                        )
+                        hasValue(item.university)
                             ? `
                                 <p class="card-university">
                                     ${escapeHTML(
@@ -1147,7 +951,7 @@ function displayPrograms(data) {
                             <div class="degree-title-box">
 
                                 <span>
-                                    الدرجة الجامعية
+                                    الدرجة / البرنامج
                                 </span>
 
                                 <strong>
@@ -1186,65 +990,13 @@ function displayPrograms(data) {
 
 
                     ${
-                        hasValue(item.pathwayType)
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        نوع المسار
-                                    </span>
-
-                                    <strong
-                                        class="pathway-badge"
-                                    >
-
-                                        ${escapeHTML(
-                                            item.pathwayType
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
-                        hasValue(item.pathway)
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        مسار Kaplan
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.pathway
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
                         hasValue(item.program)
                             ? `
 
                                 <div class="data-item">
 
                                     <span>
-                                        البرنامج / المرحلة
+                                        المرحلة / البرنامج
                                     </span>
 
                                     <strong>
@@ -1263,102 +1015,7 @@ function displayPrograms(data) {
 
 
                     ${
-                        hasValue(
-                            item.academicRequirements.general
-                        )
-                            ? `
-
-                                <div class="data-item full-width">
-
-                                    <span>
-                                        المتطلبات الأكاديمية
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.academicRequirements.general
-                                        )}
-
-                                        ${
-                                            item.academicRequirements.countrySpecific
-                                                ? `
-                                                    <br>
-                                                    <small>
-                                                        تختلف التفاصيل حسب دولة الطالب.
-                                                    </small>
-                                                `
-                                                : ""
-                                        }
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
-                        item.englishOptions.length === 0 &&
-                        hasValue(item.languageRequirements)
-
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        متطلبات اللغة
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.languageRequirements
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
-                        hasValue(item.gpaRequirement) &&
-                        !hasValue(
-                            item.academicRequirements.general
-                        )
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        المعدل المطلوب
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.gpaRequirement
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
-                        item.englishOptions.length === 0 &&
                         hasValue(item.price)
-
                             ? `
 
                                 <div class="data-item">
@@ -1407,31 +1064,6 @@ function displayPrograms(data) {
                     }
 
 
-                    ${
-                        hasValue(item.degreeEntry)
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        دخول الجامعة
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.degreeEntry
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
                     <div class="data-item">
 
                         <span>
@@ -1456,58 +1088,54 @@ function displayPrograms(data) {
                     </div>
 
 
-                    ${
-                        item.internshipAvailable
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        Internship
-                                    </span>
-
-                                    <strong>
-                                        متاح
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
-                    ${
-                        hasValue(item.sourceYear)
-                            ? `
-
-                                <div class="data-item">
-
-                                    <span>
-                                        سنة البيانات
-                                    </span>
-
-                                    <strong>
-
-                                        ${escapeHTML(
-                                            item.sourceYear
-                                        )}
-
-                                    </strong>
-
-                                </div>
-
-                            `
-                            : ""
-                    }
-
-
                 </div>
 
 
-                ${createEnglishOptionsTable(
-                    item.englishOptions
-                )}
+                <div class="requirements-section">
+
+                    <h3>
+                        متطلبات القبول
+                    </h3>
+
+
+                    <div class="requirements-grid">
+
+                        <div class="requirement-item">
+
+                            <span>
+                                متطلبات اللغة
+                            </span>
+
+                            <strong>
+
+                                ${getRequirementValue(
+                                    item.languageRequirements
+                                )}
+
+                            </strong>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span>
+                                المعدل المطلوب
+                            </span>
+
+                            <strong>
+
+                                ${getRequirementValue(
+                                    item.gpaRequirement
+                                )}
+
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
                 ${
@@ -1550,269 +1178,27 @@ function displayPrograms(data) {
 
 
 /* =========================================
-   English Options Table
+   Requirement display
 ========================================= */
 
-function createEnglishOptionsTable(
-    options
-) {
+function getRequirementValue(value) {
 
     if (
-        !Array.isArray(options) ||
-        options.length === 0
+        !hasValue(value)
     ) {
 
-        return "";
+        return "سيتم إضافة المتطلبات";
 
     }
 
 
-    const rows =
-        options.map((option) => `
-
-            <tr>
-
-                <td>
-
-                    ${formatIELTS(option)}
-
-                </td>
-
-
-                <td>
-
-                    ${escapeHTML(
-                        option.duration ||
-                        "-"
-                    )}
-
-                </td>
-
-
-                <td>
-
-                    ${formatTuition(
-                        option.tuition,
-                        option.currency
-                    )}
-
-                </td>
-
-
-                <td>
-
-                    ${escapeHTML(
-                        option.start ||
-                        "-"
-                    )}
-
-                </td>
-
-
-                <td>
-
-                    ${escapeHTML(
-                        option.end ||
-                        "-"
-                    )}
-
-                </td>
-
-
-                <td>
-
-                    ${escapeHTML(
-                        option.degreeEntry ||
-                        "-"
-                    )}
-
-                </td>
-
-            </tr>
-
-        `).join("");
-
-
-    return `
-
-        <div class="options-section">
-
-            <h3>
-                خيارات القبول والمسار
-            </h3>
-
-
-            <div class="options-table-wrapper">
-
-                <table class="options-table">
-
-                    <thead>
-
-                        <tr>
-
-                            <th>
-                                IELTS
-                            </th>
-
-                            <th>
-                                المدة
-                            </th>
-
-                            <th>
-                                الرسوم
-                            </th>
-
-                            <th>
-                                البداية
-                            </th>
-
-                            <th>
-                                النهاية
-                            </th>
-
-                            <th>
-                                دخول الجامعة
-                            </th>
-
-                        </tr>
-
-                    </thead>
-
-
-                    <tbody>
-
-                        ${rows}
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </div>
-
-    `;
+    return escapeHTML(value);
 
 }
 
 
 /* =========================================
-   IELTS formatting
-========================================= */
-
-function formatIELTS(option) {
-
-    if (
-        option.overall === "" &&
-        option.minSkill === ""
-    ) {
-
-        return "-";
-
-    }
-
-
-    let text = "";
-
-
-    if (
-        option.overall !== ""
-    ) {
-
-        text += `${escapeHTML(
-            option.overall
-        )} overall`;
-
-    }
-
-
-    if (
-        option.minSkill !== ""
-    ) {
-
-        text += ` / no skill below ${escapeHTML(
-            option.minSkill
-        )}`;
-
-    }
-
-
-    return text;
-
-}
-
-
-/* =========================================
-   Tuition formatting
-========================================= */
-
-function formatTuition(
-    tuition,
-    currency
-) {
-
-    if (
-        tuition === "" ||
-        tuition === null ||
-        tuition === undefined
-    ) {
-
-        return "-";
-
-    }
-
-
-    if (
-        typeof tuition === "number"
-    ) {
-
-        const formatted =
-            new Intl.NumberFormat(
-                "en-GB"
-            ).format(tuition);
-
-
-        if (
-            currency === "GBP"
-        ) {
-
-            return `£${formatted}`;
-
-        }
-
-
-        if (
-            currency === "USD"
-        ) {
-
-            return `$${formatted}`;
-
-        }
-
-
-        if (
-            currency === "EUR"
-        ) {
-
-            return `€${formatted}`;
-
-        }
-
-
-        return `${formatted} ${escapeHTML(
-            currency || ""
-        )}`;
-
-    }
-
-
-    return escapeHTML(tuition);
-
-}
-
-
-/* =========================================
-   Degree Level Label
+   Degree Level
 ========================================= */
 
 function getDegreeLevelLabel(level) {
@@ -1895,6 +1281,73 @@ function getScholarshipLabel(status) {
 
 
 /* =========================================
+   Price
+========================================= */
+
+function formatPrice(
+    price,
+    currency
+) {
+
+    if (
+        price === "" ||
+        price === null ||
+        price === undefined
+    ) {
+
+        return "";
+
+    }
+
+
+    if (
+        typeof price !== "number"
+    ) {
+
+        return String(price);
+
+    }
+
+
+    const formatted =
+        new Intl.NumberFormat(
+            "en-GB"
+        ).format(price);
+
+
+    if (
+        currency === "GBP"
+    ) {
+
+        return `£${formatted}`;
+
+    }
+
+
+    if (
+        currency === "USD"
+    ) {
+
+        return `$${formatted}`;
+
+    }
+
+
+    if (
+        currency === "EUR"
+    ) {
+
+        return `€${formatted}`;
+
+    }
+
+
+    return `${formatted} ${currency || ""}`;
+
+}
+
+
+/* =========================================
    Helpers
 ========================================= */
 
@@ -1908,11 +1361,6 @@ function normalizeText(value) {
 
 }
 
-
-/*
- * Search normalization
- * Handles common Arabic characters too.
- */
 
 function normalizeSearchText(value) {
 
@@ -1984,10 +1432,6 @@ function hasValue(value) {
     }
 
 
-    /*
-     * Hide old placeholders
-     */
-
     const placeholders = [
 
         "سيتم إضافته",
@@ -2020,23 +1464,26 @@ function resetFilters() {
     searchInput.value =
         "";
 
+
     specializationFilter.value =
         "";
+
 
     degreeLevelFilter.value =
         "";
 
+
     countryFilter.value =
         "";
+
 
     partnershipFilter.value =
         "";
 
+
     universityFilter.value =
         "";
 
-    pathwayFilter.value =
-        "";
 
     scholarshipFilter.value =
         "";
@@ -2085,12 +1532,6 @@ partnershipFilter.addEventListener(
 
 
 universityFilter.addEventListener(
-    "change",
-    filterPrograms
-);
-
-
-pathwayFilter.addEventListener(
     "change",
     filterPrograms
 );
