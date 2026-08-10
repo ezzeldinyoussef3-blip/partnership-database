@@ -14,8 +14,6 @@
 
     --border: #dce3ec;
 
-    --soft-background: #f8fafc;
-
     --success-background: #e7f7ed;
     --success-text: #146c3d;
 
@@ -34,6 +32,7 @@ body {
     margin: 0;
 
     background: var(--background);
+
     color: var(--text);
 
     font-family: Arial, Tahoma, sans-serif;
@@ -41,7 +40,7 @@ body {
 
 
 .container {
-    width: min(1450px, 94%);
+    width: min(1400px, 94%);
 
     margin: 0 auto;
 
@@ -49,14 +48,13 @@ body {
 }
 
 
-/* ===========================
-   Header
-=========================== */
+/* Header */
 
 .page-header {
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     gap: 25px;
@@ -98,7 +96,7 @@ h1 {
 
 
 .results-box {
-    min-width: 115px;
+    min-width: 110px;
 
     padding: 18px;
 
@@ -128,9 +126,7 @@ h1 {
 }
 
 
-/* ===========================
-   Search
-=========================== */
+/* Search */
 
 .search-card {
     padding: 24px;
@@ -201,21 +197,16 @@ select:focus {
 .filters-grid {
     display: grid;
 
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
 
     gap: 16px;
 }
 
 
-.search-actions {
-    display: flex;
-
-    margin-top: 20px;
-}
-
-
 #resetButton {
     width: auto;
+
+    margin-top: 20px;
 
     padding: 11px 22px;
 
@@ -235,14 +226,10 @@ select:focus {
 
 #resetButton:hover {
     background: var(--primary-dark);
-
-    transform: translateY(-1px);
 }
 
 
-/* ===========================
-   Results
-=========================== */
+/* Results */
 
 .results-grid {
     display: grid;
@@ -264,16 +251,14 @@ select:focus {
 
     box-shadow: 0 8px 22px rgba(23, 32, 51, 0.07);
 
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: 0.2s ease;
 }
 
 
 .result-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 
-    box-shadow: 0 14px 30px rgba(23, 32, 51, 0.11);
+    box-shadow: 0 12px 28px rgba(23, 32, 51, 0.11);
 }
 
 
@@ -302,7 +287,7 @@ select:focus {
 .card-header h2 {
     margin: 0 0 7px;
 
-    font-size: 21px;
+    font-size: 22px;
 
     line-height: 1.5;
 }
@@ -329,7 +314,7 @@ select:focus {
 
     padding: 7px 11px;
 
-    background: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.17);
 
     border-radius: 20px;
 
@@ -341,10 +326,6 @@ select:focus {
     padding: 20px;
 }
 
-
-/* ===========================
-   Degree title
-=========================== */
 
 .degree-title-box {
     margin-bottom: 18px;
@@ -371,15 +352,13 @@ select:focus {
 
 
 .degree-title-box strong {
-    font-size: 16px;
+    display: block;
 
     line-height: 1.6;
 }
 
 
-/* ===========================
-   Data
-=========================== */
+/* Data */
 
 .data-grid {
     display: grid;
@@ -393,7 +372,7 @@ select:focus {
 .data-item {
     padding: 13px;
 
-    background: var(--soft-background);
+    background: #f8fafc;
 
     border: 1px solid #e8edf3;
 
@@ -426,9 +405,22 @@ select:focus {
 }
 
 
-/* ===========================
-   Badges
-=========================== */
+.level-badge {
+    display: inline-block !important;
+
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    background: var(--info-background);
+
+    color: var(--info-text);
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
 
 .scholarship-badge {
     display: inline-block !important;
@@ -466,51 +458,23 @@ select:focus {
 }
 
 
-.level-badge,
-.pathway-badge {
-    display: inline-block;
+/* Requirements */
 
-    width: fit-content;
-
-    padding: 6px 10px;
-
-    border-radius: 20px;
-
-    font-size: 13px;
-
-    font-weight: bold;
-}
-
-
-.level-badge {
-    background: var(--info-background);
-
-    color: var(--info-text);
-}
-
-
-.pathway-badge {
-    background: #fff3e7;
-
-    color: var(--primary-dark);
-}
-
-
-/* ===========================
-   IELTS Options
-=========================== */
-
-.options-section {
+.requirements-section {
     margin-top: 18px;
 
-    padding-top: 18px;
+    padding: 16px;
 
-    border-top: 1px solid var(--border);
+    background: #fffdf8;
+
+    border: 1px solid #f1e2cf;
+
+    border-radius: 14px;
 }
 
 
-.options-section h3 {
-    margin: 0 0 12px;
+.requirements-section h3 {
+    margin: 0 0 14px;
 
     color: var(--primary-dark);
 
@@ -518,49 +482,45 @@ select:focus {
 }
 
 
-.options-table-wrapper {
-    overflow-x: auto;
+.requirements-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+
+    gap: 12px;
 }
 
 
-.options-table {
-    width: 100%;
+.requirement-item {
+    padding: 12px;
 
-    min-width: 620px;
-
-    border-collapse: collapse;
-
-    font-size: 14px;
-}
-
-
-.options-table th,
-.options-table td {
-    padding: 11px 10px;
+    background: white;
 
     border: 1px solid var(--border);
 
-    text-align: right;
-
-    vertical-align: top;
+    border-radius: 10px;
 }
 
 
-.options-table th {
-    background: #fff7ef;
+.requirement-item span {
+    display: block;
 
-    color: var(--primary-dark);
+    margin-bottom: 5px;
+
+    color: var(--muted);
+
+    font-size: 13px;
 }
 
 
-.options-table tbody tr:nth-child(even) {
-    background: #fafbfd;
+.requirement-item strong {
+    display: block;
+
+    line-height: 1.6;
 }
 
 
-/* ===========================
-   Notes
-=========================== */
+/* Notes */
 
 .notes-box {
     margin-top: 15px;
@@ -591,9 +551,7 @@ select:focus {
 }
 
 
-/* ===========================
-   Empty / Error
-=========================== */
+/* States */
 
 .empty-state,
 .error-state {
@@ -635,20 +593,9 @@ select:focus {
 }
 
 
-/* ===========================
-   Responsive
-=========================== */
+/* Responsive */
 
-@media (max-width: 1050px) {
-
-    .filters-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-@media (max-width: 850px) {
+@media (max-width: 950px) {
 
     .filters-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -684,7 +631,8 @@ select:focus {
 
 
     .filters-grid,
-    .data-grid {
+    .data-grid,
+    .requirements-grid {
         grid-template-columns: 1fr;
     }
 
@@ -694,18 +642,8 @@ select:focus {
     }
 
 
-    .country-badge {
-        align-self: flex-start;
-    }
-
-
     #resetButton {
         width: 100%;
-    }
-
-
-    .search-actions {
-        display: block;
     }
 
 }
