@@ -37,6 +37,11 @@ const errorState =
 
 let programs = [];
 
+// Display matching results in batches for the expanded portfolio.
+const PAGE_SIZE = 60;
+let visibleCount = PAGE_SIZE;
+let activeFilteredPrograms = [];
+
 
 /* =========================================
    Load Data
@@ -262,9 +267,9 @@ function createNormalizedProgram(
 
 
         notes:
-            degree.notes ||
-            parent.notes ||
-            ""
+            [parent.notes, degree === parent ? "" : degree.notes]
+                .filter(Boolean)
+                .join(" | ")
 
     };
 
@@ -842,6 +847,8 @@ function filterPrograms() {
         });
 
 
+    visibleCount = PAGE_SIZE;
+    activeFilteredPrograms = filteredPrograms;
     displayPrograms(
         filteredPrograms
     );
@@ -854,6 +861,9 @@ function filterPrograms() {
 ========================================= */
 
 function displayPrograms(data) {
+
+    const oldButton = document.getElementById("loadMoreButton");
+    if (oldButton) oldButton.remove();
 
     cardsContainer.innerHTML =
         "";
@@ -885,7 +895,7 @@ function displayPrograms(data) {
         "none";
 
 
-    data.forEach((item) => {
+    data.slice(0, visibleCount).forEach((item) => {
 
         const card =
             document.createElement(
@@ -933,7 +943,7 @@ function displayPrograms(data) {
                 <span class="country-badge">
 
                     ${escapeHTML(
-                        item.country
+                        item.country || "غير محدد"
                     )}
 
                 </span>
@@ -1174,6 +1184,18 @@ function displayPrograms(data) {
 
     });
 
+    if (data.length > visibleCount) {
+        const loadMore = document.createElement("button");
+        loadMore.type = "button";
+        loadMore.id = "loadMoreButton";
+        loadMore.className = "load-more-button";
+        loadMore.textContent = `عرض المزيد (${Math.min(visibleCount, data.length)} من ${data.length})`;
+        loadMore.addEventListener("click", () => {
+            visibleCount += PAGE_SIZE;
+            displayPrograms(activeFilteredPrograms);
+        });
+        cardsContainer.insertAdjacentElement("afterend", loadMore);
+    }
 }
 
 

@@ -647,3 +647,18 @@ select:focus {
     }
 
 }
+
+/* Batch rendering for an expanded list of partners. */
+.load-more-button {
+    display: block;
+    margin: 26px auto;
+    padding: 12px 30px;
+    border: 1px solid #f58220;
+    border-radius: 12px;
+    background: #fff8f1;
+    color: #9c4300;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+.load-more-button:hover { background: #ffe9d3; }
